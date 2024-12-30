@@ -31,14 +31,14 @@ CV_SIZE : 0.2
 # Please note that the system will extract the CV dataset for testing first
 # SAMPLE SIZE will only applied to the remaining training data after the CV Split
 # Set from 0.1 to 1.0. 1.0 means not reducing teh dataset size.
-SAMPLE_SIZE : 0.6
+SAMPLE_SIZE : 0.4
 
 # Define which model to run
 # The MODELS_LIST will define which model to run so there is no need to delete any model configuration
 
 #MODELS_LIST : ['polynomial', 'ridge', 'decision_tree', 'knn_regressor', 'svr', 'rf_regressor', 'bg_regressor', 'xgboost']
 #MODELS_LIST : ['decision_tree','rf_regressor', 'bg_regressor', 'xgboost']
-MODELS_LIST : ['ridge', 'decision_tree']
+MODELS_LIST : ['knn_regressor', 'svr']
 
 # Define models pipelines that include polynomial features and scaling.
 # For feature scaling we have StandardScaler and MinMaxScaler

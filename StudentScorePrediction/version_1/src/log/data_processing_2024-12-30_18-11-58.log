@@ -1,0 +1,36 @@
+2024-12-30 18:11:58,986 - Begin Data Processing Run
+2024-12-30 18:11:58,986 - ----------------------------------------------------------------
+2024-12-30 18:11:58,987 - Downloading Data File
+2024-12-30 18:11:59,327 - Download completed
+2024-12-30 18:11:59,331 - All tables in this db: ['score']
+2024-12-30 18:11:59,496 - Data Extracted Close Connection
+2024-12-30 18:11:59,497 - Starting the first part of data cleaning
+2024-12-30 18:11:59,497 - ----------------------------------------------------------------
+2024-12-30 18:11:59,501 - Removing Duplicates
+2024-12-30 18:11:59,508 - Set student_id as index
+2024-12-30 18:11:59,509 - Fixing null values for target
+2024-12-30 18:11:59,522 - First part of data cleaning completed
+2024-12-30 18:11:59,522 - Forming training and testing dataset
+2024-12-30 18:11:59,523 - ----------------------------------------------------------------
+2024-12-30 18:11:59,542 - Train and test dataset formed
+2024-12-30 18:11:59,543 - Size of X_train is: 11629
+2024-12-30 18:11:59,543 - Size of y_train is: 11629
+2024-12-30 18:11:59,544 - Size of X_test is: 2908
+2024-12-30 18:11:59,545 - Size of y_test is: 2908
+2024-12-30 18:11:59,546 - After the spliting of training and test data. All following data processing will be done on X_train and X_test.
+2024-12-30 18:11:59,547 - Staring part 2 of data cleaning which will be done on X_train and X_test.
+2024-12-30 18:11:59,548 - ----------------------------------------------------------------
+2024-12-30 18:11:59,549 - Fixing Null Values on Column 'attendance_rate'
+2024-12-30 18:11:59,555 - Feature Engineering
+2024-12-30 18:11:59,556 - Create new column for sleep hours
+2024-12-30 18:11:59,642 - Fixing Categorical Duplication
+2024-12-30 18:11:59,655 - One-Hot Encoding
+2024-12-30 18:11:59,699 - X_train: Total number of rows = 11629: Total number of cololumns = 28 
+2024-12-30 18:11:59,700 - y_train: Total number of rows = 11629
+2024-12-30 18:11:59,700 - X_test: Total number of rows = 2908: Total number of cololumns = 28 
+2024-12-30 18:11:59,701 - y_test: Total number of rows = 2908
+2024-12-30 18:11:59,701 - ----------------------------------------------------------------
+2024-12-30 18:11:59,702 - Saving Data Files
+2024-12-30 18:11:59,992 - Save complete
+2024-12-30 18:11:59,993 - ----------------------------------------------------------------
+2024-12-30 18:11:59,993 - End Data Processing Run
