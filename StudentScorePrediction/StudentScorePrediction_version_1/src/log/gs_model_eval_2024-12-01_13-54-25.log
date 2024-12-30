@@ -1,0 +1,26 @@
+2024-12-01 13:54:25,307 - Begin Grid Search Run
+2024-12-01 13:54:25,308 - ----------------------------------------------------------------
+2024-12-01 13:54:25,371 - Running GridSearchCV for decision_tree...
+2024-12-01 13:54:28,597 - params = {'decision_tree__max_depth': 10, 'decision_tree__min_samples_leaf': 1, 'decision_tree__min_samples_split': 80}: rank = 1, score = 0.6726, time = 0.0s
+2024-12-01 13:54:28,597 - params = {'decision_tree__max_depth': 10, 'decision_tree__min_samples_leaf': 1, 'decision_tree__min_samples_split': 90}: rank = 2, score = 0.672, time = 0.0s
+2024-12-01 13:54:28,598 - params = {'decision_tree__max_depth': 10, 'decision_tree__min_samples_leaf': 3, 'decision_tree__min_samples_split': 80}: rank = 3, score = 0.6716, time = 0.0s
+2024-12-01 13:54:28,598 - params = {'decision_tree__max_depth': 10, 'decision_tree__min_samples_leaf': 1, 'decision_tree__min_samples_split': 100}: rank = 4, score = 0.6715, time = 0.0s
+2024-12-01 13:54:28,598 - params = {'decision_tree__max_depth': 10, 'decision_tree__min_samples_leaf': 3, 'decision_tree__min_samples_split': 90}: rank = 5, score = 0.6714, time = 0.0s
+2024-12-01 13:54:28,599 - params = {'decision_tree__max_depth': 10, 'decision_tree__min_samples_leaf': 3, 'decision_tree__min_samples_split': 100}: rank = 6, score = 0.671, time = 0.0s
+2024-12-01 13:54:28,599 - params = {'decision_tree__max_depth': 20, 'decision_tree__min_samples_leaf': 3, 'decision_tree__min_samples_split': 100}: rank = 7, score = 0.6695, time = 0.0s
+2024-12-01 13:54:28,600 - params = {'decision_tree__max_depth': 30, 'decision_tree__min_samples_leaf': 1, 'decision_tree__min_samples_split': 90}: rank = 8, score = 0.6695, time = 0.0s
+2024-12-01 13:54:28,600 - params = {'decision_tree__max_depth': 20, 'decision_tree__min_samples_leaf': 3, 'decision_tree__min_samples_split': 90}: rank = 9, score = 0.6694, time = 0.0s
+2024-12-01 13:54:28,601 - params = {'decision_tree__max_depth': 20, 'decision_tree__min_samples_leaf': 1, 'decision_tree__min_samples_split': 90}: rank = 10, score = 0.6694, time = 0.0s
+2024-12-01 13:54:28,601 - params = {'decision_tree__max_depth': 30, 'decision_tree__min_samples_leaf': 3, 'decision_tree__min_samples_split': 100}: rank = 11, score = 0.6694, time = 0.0s
+2024-12-01 13:54:28,601 - params = {'decision_tree__max_depth': 30, 'decision_tree__min_samples_leaf': 1, 'decision_tree__min_samples_split': 80}: rank = 12, score = 0.6691, time = 0.0s
+2024-12-01 13:54:28,602 - params = {'decision_tree__max_depth': 30, 'decision_tree__min_samples_leaf': 3, 'decision_tree__min_samples_split': 90}: rank = 13, score = 0.6691, time = 0.0s
+2024-12-01 13:54:28,602 - params = {'decision_tree__max_depth': 20, 'decision_tree__min_samples_leaf': 1, 'decision_tree__min_samples_split': 80}: rank = 14, score = 0.6691, time = 0.0s
+2024-12-01 13:54:28,603 - params = {'decision_tree__max_depth': 20, 'decision_tree__min_samples_leaf': 3, 'decision_tree__min_samples_split': 80}: rank = 15, score = 0.6691, time = 0.0s
+2024-12-01 13:54:28,603 - params = {'decision_tree__max_depth': 20, 'decision_tree__min_samples_leaf': 1, 'decision_tree__min_samples_split': 100}: rank = 16, score = 0.669, time = 0.1s
+2024-12-01 13:54:28,603 - params = {'decision_tree__max_depth': 30, 'decision_tree__min_samples_leaf': 3, 'decision_tree__min_samples_split': 80}: rank = 17, score = 0.6689, time = 0.0s
+2024-12-01 13:54:28,604 - params = {'decision_tree__max_depth': 30, 'decision_tree__min_samples_leaf': 1, 'decision_tree__min_samples_split': 100}: rank = 18, score = 0.6689, time = 0.0s
+2024-12-01 13:54:28,604 - Model: decision_tree
+2024-12-01 13:54:28,604 - Best Score (R²): 0.6726
+2024-12-01 13:54:28,604 - Best Parameters: {'decision_tree__max_depth': 10, 'decision_tree__min_samples_leaf': 1, 'decision_tree__min_samples_split': 80}
+2024-12-01 13:54:28,609 - ----------------------------------------------------------------
+2024-12-01 13:54:28,609 - End of Grid Search Run

@@ -1,0 +1,128 @@
+# gs_config.yaml
+
+
+
+#######################################################################################
+### User Guide:                                                                  ######
+#######################################################################################
+### There are 5 main configurations
+### They are SAMPLE_SIZE, MODEL_LIST, MODELS, PARAMS and GRID_SEARCH_PARAMS
+### SAMPLE_SIZE : If you dataset is very large, you can reduce the taining dataset.
+### MODEL_LIST : Use this setting to select which model to run, this way we can keep 
+### the settings of all other models.
+### MODELS : Use this setting to construct the pipeline for each model.
+### PARAMS : Use this setting to define which parameters to run for each model
+### GRID_SEARCH_PARAMS : This is the settings for grid search function
+###
+### This is grid search with cross validation fold. 
+### 
+#######################################################################################
+
+#############################################################################
+### Settings Parameters
+#############################################################################
+
+# Define Sample size for large dataset
+# If your dataset is very large, you can set the sample size
+# Use 1.0 for the whole dataset
+SAMPLE_SIZE : 1.0
+
+# Define which model to run
+# The MODELS_LIST will define which model to run so there is no need to delete any model configuration
+#MODELS_LIST : ['polynomial', 'ridge', 'decision_tree', 'rf_regressor', 'gb_regressor', 'xgboost']
+#MODELS_LIST : ['decision_tree', 'ridge', 'polynomial']
+MODELS_LIST : ['decision_tree']
+
+
+# Define models pipelines that include polynomial features and scaling.
+# For feature scaling we have StandardScaler and MinMaxScaler
+MODELS : 
+  'polynomial':
+    - 'poly': PolynomialFeatures
+    - 'scaler': StandardScaler
+    - 'polynomial': LinearRegression
+  'ridge':
+    - 'poly': PolynomialFeatures
+    - 'scaler': StandardScaler
+    - 'ridge': Ridge
+  'decision_tree':
+    - 'decision_tree': DecisionTreeRegressor
+  'knn_regressor':
+    - 'poly': PolynomialFeatures
+    - 'scaler': StandardScaler
+    - 'knn_regressor': KNeighborsRegressor        
+  'svr':
+    - 'poly': PolynomialFeatures
+    - 'scaler': StandardScaler
+    - 'svr': SVR       
+  'rf_regressor': 
+    - 'rf_regressor': RandomForestRegressor
+  'gb_regressor': 
+    - 'gb_regressor': GradientBoostingRegressor
+  'xgboost': 
+    - 'scaler': StandardScaler
+    - 'xgboost': XGBRegressor
+
+
+# Define hyperparameters for each model, including polynomial degree
+PARAMS : {
+    'polynomial': {
+        'poly__degree': [2],              
+    },
+    'ridge': {
+        'poly__degree': [2],             
+        'ridge__alpha': [0.01, 0.05, 0.1, 0.5],
+        'ridge__solver': ['auto', 'svd']
+    },
+    'decision_tree': {
+        'decision_tree__max_depth': [10, 20, 30],
+        'decision_tree__min_samples_split': [80, 90, 100],
+        'decision_tree__min_samples_leaf': [1, 3]
+    },
+    'knn_regressor': {
+        'poly__degree': [2, 3],
+        'knn_regressor__n_neighbors': [3, 5, 7, 9, 11, 13, 15],
+        'knn_regressor__weights': ['uniform', 'distance'],
+        'knn_regressor__p': [1, 2]
+    },
+    'svr': {
+        'poly__degree': [2, 3],
+        'svr__kernel': ['rbf'],
+        'svr__C': [9, 10, 11],
+        'svr__epsilon': [1, 1.5, 2.0],
+        'svr__gamma': [0.0001, 0.0005, 0.001, 0.005]
+    },
+    'rf_regressor':{
+        'rf_regressor__n_estimators': [200, 300, 500],
+        'rf_regressor__max_depth': [10, 20, 30],
+        'rf_regressor__min_samples_split': [5, 10, 15],
+        'rf_regressor__min_samples_leaf': [1, 2, 4],
+        'rf_regressor__bootstrap': [True]        
+    },
+    'gb_regressor':{
+        'gb_regressor__n_estimators': [200],
+        'gb_regressor__learning_rate': [0.04, 0.08, 0.1],
+        'gb_regressor__max_depth': [3, 5, 8, 10],
+        #'gb_regressor__min_samples_split': [20, 25],
+        #'gb_regressor__min_samples_leaf': [1, 4],
+        #'gb_regressor__subsample': [0.7, 0.85, 1.0],
+        #'gb_regressor__loss': ['squared_error', 'huber']        
+    },
+    'xgboost': {
+        "xgboost__n_estimators": [600, 650, 700],
+        "xgboost__learning_rate": [0.008, 0.01, 0.05],
+        "xgboost__max_depth": [5, 8, 10, 12, 14],
+        "xgboost__subsample": [0.2, 0.5, 1.0],
+        #"xgboost__colsample_bytree": [0.1, 0.5, 1.0],
+        #"xgboost__min_child_weight": [1, 5, 10]
+    }
+}
+
+
+# Define grid search parameters with R² as the scoring metric
+GRID_SEARCH_PARAMS : {
+    'cv': 5,                  # Number of cross-validation folds
+    'scoring': 'r2',          # Use R² as the scoring metric
+    'n_jobs': 4,              # Do not use -1 as it will cause issue 
+    'verbose': 3
+}

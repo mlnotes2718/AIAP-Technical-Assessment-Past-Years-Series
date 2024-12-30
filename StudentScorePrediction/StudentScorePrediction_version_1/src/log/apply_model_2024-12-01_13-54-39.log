@@ -1,0 +1,43 @@
+2024-12-01 13:54:39,131 - Begin Apply Model Run
+2024-12-01 13:54:39,131 - ----------------------------------------------------------------
+2024-12-01 13:54:39,204 - Applying Models from PKL File:
+2024-12-01 13:54:39,205 - ----------------------------------------------------------------
+2024-12-01 13:54:39,205 - Error loading PKL file
+2024-12-01 13:54:39,206 - [Errno 2] No such file or directory: './pkl/best_ridge.pkl'
+2024-12-01 13:54:39,206 - -----------------------------------------------------------------------
+2024-12-01 13:54:39,247 - Pipe: Pipeline(steps=[('decision_tree',
+                 DecisionTreeRegressor(max_depth=10, min_samples_split=80))])
+2024-12-01 13:54:39,253 - R² Score for Training Dataset: 0.7214035862555315
+2024-12-01 13:54:39,257 - R² Score for Test Dataset: 0.6624976812595031
+2024-12-01 13:54:39,258 - -----------------------------------------------------------------------
+2024-12-01 13:54:39,259 -  
+2024-12-01 13:54:39,259 - Applying Models from Manual Selection:
+2024-12-01 13:54:39,259 - ----------------------------------------------------------------
+2024-12-01 13:54:49,055 - Pipe: Pipeline(steps=[('gb_regressor',
+                 GradientBoostingRegressor(learning_rate=0.05, max_depth=5,
+                                           min_samples_split=10,
+                                           n_estimators=500))])
+2024-12-01 13:54:49,205 - R² Score for Training Dataset: 0.7954385055960307
+2024-12-01 13:54:49,247 - R² Score for Test Dataset: 0.7372542043947722
+2024-12-01 13:54:49,248 - -----------------------------------------------------------------------
+2024-12-01 13:54:55,131 - Pipe: Pipeline(steps=[('scaler', StandardScaler()),
+                ('xgboost',
+                 XGBRegressor(base_score=None, booster=None, callbacks=None,
+                              colsample_bylevel=None, colsample_bynode=None,
+                              colsample_bytree=1.0, device=None,
+                              early_stopping_rounds=None,
+                              enable_categorical=False, eval_metric=None,
+                              feature_types=None, gamma=None, grow_policy=None,
+                              importance_type=None,
+                              interaction_constraints=None, learning_rate=0.01,
+                              max_bin=None, max_cat_threshold=None,
+                              max_cat_to_onehot=None, max_delta_step=None,
+                              max_depth=10, max_leaves=None, min_child_weight=1,
+                              missing=nan, monotone_constraints=None,
+                              multi_strategy=None, n_estimators=650,
+                              n_jobs=None, num_parallel_tree=None,
+                              random_state=None, ...))])
+2024-12-01 13:54:55,236 - R² Score for Training Dataset: 0.9132589884181388
+2024-12-01 13:54:55,265 - R² Score for Test Dataset: 0.7432222854770001
+2024-12-01 13:54:55,266 - -----------------------------------------------------------------------
+2024-12-01 13:54:55,266 - End of Apply Model Run
