@@ -1,5 +1,8 @@
 # AIAP Technical Assessment Past Years Series
 
+## Forked Introduction
+This is a forked of AIAP past years challenge exercise. This is a good exercise to practice your machine learning development and deployment skills.
+
 <br />
 
 <img src = "imgs/AIAP-Banner.png">
