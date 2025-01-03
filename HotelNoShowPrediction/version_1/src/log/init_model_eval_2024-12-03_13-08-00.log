@@ -1,0 +1,52 @@
+2024-12-03 13:08:00,268 - Begin Initial Model Evaluation Run
+2024-12-03 13:08:00,269 - ----------------------------------------------------------------
+2024-12-03 13:08:00,542 - Train and CV dataset formed
+2024-12-03 13:08:00,543 - Size of X_train is: 66858
+2024-12-03 13:08:00,543 - Size of y_train is: 66858
+2024-12-03 13:08:00,544 - Size of X_cv is: 16715
+2024-12-03 13:08:00,544 - Size of y_cv is: 16715
+2024-12-03 13:08:00,550 - ----------------------------------------------------------------
+2024-12-03 13:08:00,551 - Training dataset after downsize
+2024-12-03 13:08:00,551 - Size of X_train is: 20057
+2024-12-03 13:08:00,551 - Size of y_train is: 20057
+2024-12-03 13:08:00,552 -  
+2024-12-03 13:08:00,552 - Evaluating model: knn_classifier
+2024-12-03 13:08:00,553 - ----------------------------------------------------------------
+2024-12-03 13:08:03,556 - Running model with default Settings:
+2024-12-03 13:08:03,556 - ----------------------------------------------------------------
+2024-12-03 13:08:06,943 - Accuracy score for training set: 0.7877050406341926
+2024-12-03 13:08:09,959 - Accuracy score for cross validation set: 0.6906371522584505
+2024-12-03 13:08:09,959 -  
+2024-12-03 13:08:09,960 - ----------------------------------------------------------------
+2024-12-03 13:08:09,960 - Running model with various parameters:
+2024-12-03 13:08:09,961 - ----------------------------------------------------------------
+2024-12-03 13:08:12,571 - {'poly__degree': 2, 'knn_classifier__n_neighbors': 5, 'knn_classifier__weights': 'distance', 'knn_classifier__metric': 'euclidean', 'knn_classifier__p': 1}
+2024-12-03 13:08:15,520 - Accuracy score for training set: 0.9998504262850875
+2024-12-03 13:08:18,121 - Accuracy score for cross validation set: 0.6918935088244093
+2024-12-03 13:08:18,121 - -----------------------
+2024-12-03 13:08:54,307 - {'poly__degree': 2, 'knn_classifier__n_neighbors': 5, 'knn_classifier__weights': 'distance', 'knn_classifier__metric': 'manhattan', 'knn_classifier__p': 1}
+2024-12-03 13:09:31,633 - Accuracy score for training set: 0.9998504262850875
+2024-12-03 13:10:03,205 - Accuracy score for cross validation set: 0.6967992820819623
+2024-12-03 13:10:03,205 - -----------------------
+2024-12-03 13:10:34,117 - {'poly__degree': 2, 'knn_classifier__n_neighbors': 5, 'knn_classifier__weights': 'distance', 'knn_classifier__metric': 'minkowski', 'knn_classifier__p': 1}
+2024-12-03 13:11:08,904 - Accuracy score for training set: 0.9998504262850875
+2024-12-03 13:11:38,800 - Accuracy score for cross validation set: 0.6967992820819623
+2024-12-03 13:11:38,800 - -----------------------
+2024-12-03 13:11:41,285 - {'poly__degree': 2, 'knn_classifier__n_neighbors': 20, 'knn_classifier__weights': 'distance', 'knn_classifier__metric': 'euclidean', 'knn_classifier__p': 1}
+2024-12-03 13:11:44,001 - Accuracy score for training set: 0.9998504262850875
+2024-12-03 13:11:46,439 - Accuracy score for cross validation set: 0.7192940472629374
+2024-12-03 13:11:46,440 - -----------------------
+2024-12-03 13:12:18,284 - {'poly__degree': 2, 'knn_classifier__n_neighbors': 20, 'knn_classifier__weights': 'distance', 'knn_classifier__metric': 'manhattan', 'knn_classifier__p': 1}
+2024-12-03 13:12:52,478 - Accuracy score for training set: 0.9998504262850875
+2024-12-03 13:13:22,990 - Accuracy score for cross validation set: 0.7253365240801675
+2024-12-03 13:13:22,990 - -----------------------
+2024-12-03 13:13:56,647 - {'poly__degree': 2, 'knn_classifier__n_neighbors': 20, 'knn_classifier__weights': 'distance', 'knn_classifier__metric': 'minkowski', 'knn_classifier__p': 1}
+2024-12-03 13:14:40,136 - Accuracy score for training set: 0.9998504262850875
+2024-12-03 13:15:11,623 - Accuracy score for cross validation set: 0.7253365240801675
+2024-12-03 13:15:11,623 - -----------------------
+2024-12-03 13:15:11,624 - ----------------------------------------------------------------
+2024-12-03 13:15:11,624 - Best Model: knn_classifier
+2024-12-03 13:15:11,625 - Best Accuracy Score: 0.7253
+2024-12-03 13:15:11,625 - Best Parameters: {'poly__degree': 2, 'knn_classifier__n_neighbors': 20, 'knn_classifier__weights': 'distance', 'knn_classifier__metric': 'manhattan', 'knn_classifier__p': 1}
+2024-12-03 13:15:11,626 - ----------------------------------------------------------------
+2024-12-03 13:15:11,626 - End of Initial Model Evaluation

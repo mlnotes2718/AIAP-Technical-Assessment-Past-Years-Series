@@ -1,0 +1,102 @@
+2024-12-02 12:27:31,331 - Begin Data Processing Run
+2024-12-02 12:27:31,332 - ----------------------------------------------------------------
+2024-12-02 12:27:31,333 - Downloading Data File
+2024-12-02 12:27:33,839 - Download completed
+2024-12-02 12:27:33,844 - All tables in this db: ['noshow']
+2024-12-02 12:27:34,850 - Data Extracted Close Connection
+2024-12-02 12:27:34,850 - Starting the first part of data cleaning
+2024-12-02 12:27:34,851 - ----------------------------------------------------------------
+2024-12-02 12:27:34,851 - Set booking_id as index
+2024-12-02 12:27:34,856 - Remove record with all null values:
+2024-12-02 12:27:34,896 - There are a total of 119390 records.
+2024-12-02 12:27:34,896 - Fix col: num_adults
+2024-12-02 12:27:34,924 - Fix col: no_show and num_children
+2024-12-02 12:27:34,926 - Starting price processing
+2024-12-02 12:27:34,927 - ----------------------------------------------------------------
+2024-12-02 12:27:35,272 - Price converted with column name local_price
+2024-12-02 12:27:35,273 - Fixing arrival_month and checkout_day issue
+2024-12-02 12:27:35,274 - ----------------------------------------------------------------
+2024-12-02 12:27:35,301 - Feature Engineering : Duration of Stay
+2024-12-02 12:27:35,301 - ----------------------------------------------------------------
+2024-12-02 12:27:35,575 - New column 'days_stayed' created and added to the dataframe.
+2024-12-02 12:27:35,575 - Feature Engineering: Number of Months of Advance Booking
+2024-12-02 12:27:35,576 - ----------------------------------------------------------------
+2024-12-02 12:27:35,643 - New column mths_adv_booking created and added to the dataframe.
+2024-12-02 12:27:35,644 - ----------------------------------------------------------------
+2024-12-02 12:27:35,644 - First part of data cleaning completed
+2024-12-02 12:27:35,644 - ----------------------------------------------------------------
+2024-12-02 12:27:35,645 - Forming training and testing dataset
+2024-12-02 12:27:35,645 - ----------------------------------------------------------------
+2024-12-02 12:27:35,719 - Train and test dataset formed
+2024-12-02 12:27:35,719 - Size of X_train is: 83573
+2024-12-02 12:27:35,720 - Size of y_train is: 83573
+2024-12-02 12:27:35,720 - Size of X_test is: 35817
+2024-12-02 12:27:35,721 - Size of y_test is: 35817
+2024-12-02 12:27:35,721 - After the spliting of training and test data. All following data processing will be done on X_train and X_test.
+2024-12-02 12:27:35,722 - ----------------------------------------------------------------
+2024-12-02 12:27:35,722 - Staring part 2 of data cleaning which will be done on X_train and X_test.
+2024-12-02 12:27:35,723 - ----------------------------------------------------------------
+2024-12-02 12:27:35,723 - Fixing Null Values on Column 'room'
+2024-12-02 12:27:35,776 - Null values are filled with room.mode
+2024-12-02 12:27:35,777 - Fixing Null Values on Column 'local_price'
+2024-12-02 12:27:35,777 - ----------------------------------------------------------------
+2024-12-02 12:27:36,343 - Null Values Check for X_train
+
+2024-12-02 12:27:36,479 - branch              0
+booking_month       0
+arrival_month       0
+arrival_day         0
+checkout_month      0
+checkout_day        0
+country             0
+first_time          0
+room                0
+platform            0
+num_adults          0
+num_children        0
+local_price         0
+days_stayed         0
+mths_adv_booking    0
+dtype: int64
+2024-12-02 12:27:36,922 - Null Values Check for X_test
+
+2024-12-02 12:27:36,971 - branch              0
+booking_month       0
+arrival_month       0
+arrival_day         0
+checkout_month      0
+checkout_day        0
+country             0
+first_time          0
+room                0
+platform            0
+num_adults          0
+num_children        0
+local_price         0
+days_stayed         0
+mths_adv_booking    0
+dtype: int64
+2024-12-02 12:27:36,971 - ----------------------------------------------------------------
+2024-12-02 12:27:36,972 - Date Custom Mapping
+2024-12-02 12:27:36,972 - ----------------------------------------------------------------
+2024-12-02 12:27:37,064 - Months mapping completed
+2024-12-02 12:27:37,064 - ----------------------------------------------------------------
+2024-12-02 12:27:37,065 - One-Hot Encoding
+2024-12-02 12:27:37,065 - ----------------------------------------------------------------
+2024-12-02 12:27:37,277 - X_train: Total number of rows = 83573: Total number of cololumns = 29 
+2024-12-02 12:27:37,277 - y_train: Total number of rows = 83573
+2024-12-02 12:27:37,278 - X_test: Total number of rows = 35817: Total number of cololumns = 29 
+2024-12-02 12:27:37,278 - y_test: Total number of rows = 35817
+2024-12-02 12:27:37,278 - ----------------------------------------------------------------
+2024-12-02 12:27:37,279 - Converting 'branch' with prefix 'br_'.
+2024-12-02 12:27:37,279 - Converting 'country' with prefix 'cty_fr_'.
+2024-12-02 12:27:37,280 - Converting 'first_time' with prefix '1st_tm_'.
+2024-12-02 12:27:37,280 - Converting 'room' with prefix 'rm_'.
+2024-12-02 12:27:37,281 - Converting 'platform' with prefix 'pltfm_'.
+2024-12-02 12:27:37,281 - ----------------------------------------------------------------
+2024-12-02 12:27:37,281 - Display Screen Info
+2024-12-02 12:27:37,298 - ----------------------------------------------------------------
+2024-12-02 12:27:37,299 - Saving Data Files
+2024-12-02 12:27:38,798 - Save complete
+2024-12-02 12:27:38,799 - ----------------------------------------------------------------
+2024-12-02 12:27:38,800 - End Data Processing Run

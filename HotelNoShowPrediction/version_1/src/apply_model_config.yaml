@@ -1,0 +1,122 @@
+# apply_model_config.yaml
+
+# This program is to pick the best pkl file and apply to the test dataset.
+
+#######################################################################################
+### User Guide:                                                                  ######
+#######################################################################################
+### There are 5 main configurations
+### They are BEST_MODELS_PKL, BEST_MODELS_LIST, MODELS and PARAMS
+### BEST_MODELS_PKL : This is where we choose the best model and use the pkl file stored
+### in the pkl folder.
+### BEST_MODELS_LIST : We use this list to decide which model we want to customized
+### MODELS : Use this setting to construct the pipeline for each model.
+### PARAMS : Use this setting to define which parameters to run for each model. This is
+### no grid search. So please use one setting for each parameter.
+###
+### This will be the first time we make use of the test dataset. 
+### 
+#######################################################################################
+
+#############################################################################
+### Settings Parameters
+#############################################################################
+
+# Enter the model to use pkl file
+#BEST_MODELS_PKL : []
+#BEST_MODELS_PKL : ['logistic_regression', 'decision_tree_classifier', 'knn_classifier', 'svc', 'rf_classifier', 'gb_classifier', 'xgboost_classifier']
+BEST_MODELS_PKL : ['decision_tree_classifier']
+
+# Enter the model for manual configuration
+#BEST_MODELS_LIST : []
+#BEST_MODELS_LIST : ['logistic_regression', 'decision_tree_classifier', 'knn_classifier', 'svc', 'rf_classifier', 'gb_classifier', 'xgboost_classifier']
+#BEST_MODELS_LIST : ['decision_tree_classifier','rf_classifier', 'gb_classifier', 'xgboost_classifier']
+BEST_MODELS_LIST : ['logistic_regression', 'decision_tree_classifier']
+
+
+# Define models pipelines that include polynomial features and scaling.
+# For feature scaling we have StandardScaler and MinMaxScaler
+MODELS : 
+  'logistic_regression':
+    - 'poly': PolynomialFeatures
+    - 'scaler': StandardScaler
+    - 'logistic': LogisticRegression 
+  'decision_tree_classifier':
+    - 'decision_tree_classifier': DecisionTreeClassifier
+  'knn_classifier':
+    - 'poly': PolynomialFeatures
+    - 'scaler': StandardScaler
+    - 'knn_classifier': KNeighborsClassifier        
+  'svc':
+    - 'poly': PolynomialFeatures
+    - 'scaler': StandardScaler
+    - 'svc': SVC       
+  'rf_classifier': 
+    - 'rf_classifier': RandomForestClassifier
+  'gb_classifier': 
+    - 'gb_classifier': GradientBoostingClassifier
+  'xgboost_classifier': 
+    - 'xgboost_classifier': XGBClassifier
+
+
+# Define hyperparameters for each model, including polynomial degrees
+# THIS IS NOT GRID SEARCH, USE ONE SETTINGS ONLY
+PARAMS : {
+    'logistic_regression': {
+        'poly__degree': 2, 
+        'logistic__C': 0.01,
+        'logistic__penalty': 'l2', 
+        'logistic__max_iter': 10000,
+        'logistic__solver': 'lbfgs',             
+    },
+    'decision_tree_classifier': {
+        'decision_tree_classifier__criterion': 'gini',
+        'decision_tree_classifier__max_depth': 20,
+        'decision_tree_classifier__min_samples_split': 5,
+        'decision_tree_classifier__min_samples_leaf': 1,
+        'decision_tree_classifier__max_features': 'sqrt',
+        'decision_tree_classifier__max_leaf_nodes': 20,
+    },
+    'knn_classifier': {
+        'poly__degree': 2,
+        'knn_classifier__n_neighbors': 20,
+        'knn_classifier__weights': 'distance',
+        'knn_classifier__metric': 'euclidean',
+        'knn_classifier__p': 1,
+    },
+    'svc': {
+        'poly__degree': 2,
+        'svc__C': 0.1,
+        'svc__kernel': 'rbf',
+        'svc__gamma': 0.01,
+        'svc__class_weight': 'balanced',
+    },
+    'rf_classifier':{
+        'rf_classifier__n_estimators': 50,             
+        'rf_classifier__max_depth': 10,                 
+        'rf_classifier__min_samples_split': 5,         
+        'rf_classifier__min_samples_leaf': 1,           
+        'rf_classifier__max_features': 'sqrt',          
+        'rf_classifier__class_weight': 'balanced',  
+    },
+    'gb_classifier':{
+        'gb_classifier__n_estimators': 100,          
+        'gb_classifier__learning_rate': 0.1,       
+        'gb_classifier__max_depth': 5,                 
+        'gb_classifier__min_samples_split': 2,        
+        'gb_classifier__min_samples_leaf': 1,          
+        'gb_classifier__subsample': 0.8,            
+        'gb_classifier__max_features': 'sqrt',      
+    },
+    'xgboost_classifier': {
+        'xgboost_classifier__n_estimators': 50,            
+        'xgboost_classifier__learning_rate': 0.1,         
+        'xgboost_classifier__max_depth': 10,                   
+        'xgboost_classifier__min_child_weight': 5,             
+        'xgboost_classifier__gamma': 0.1,                    
+        'xgboost_classifier__subsample': 0.8,              
+        'xgboost_classifier__colsample_bytree': 0.8,       
+        'xgboost_classifier__scale_pos_weight': 2,             
+    }
+}
+

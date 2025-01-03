@@ -1,0 +1,352 @@
+2024-12-03 14:22:45,525 - Begin Initial Model Evaluation Run
+2024-12-03 14:22:45,526 - ----------------------------------------------------------------
+2024-12-03 14:22:45,794 - Train and CV dataset formed
+2024-12-03 14:22:45,795 - Size of X_train is: 66858
+2024-12-03 14:22:45,795 - Size of y_train is: 66858
+2024-12-03 14:22:45,796 - Size of X_cv is: 16715
+2024-12-03 14:22:45,796 - Size of y_cv is: 16715
+2024-12-03 14:22:45,802 - ----------------------------------------------------------------
+2024-12-03 14:22:45,802 - Training dataset after downsize
+2024-12-03 14:22:45,803 - Size of X_train is: 13372
+2024-12-03 14:22:45,803 - Size of y_train is: 13372
+2024-12-03 14:22:45,803 -  
+2024-12-03 14:22:45,804 - Evaluating model: xgboost_classifier
+2024-12-03 14:22:45,804 - ----------------------------------------------------------------
+2024-12-03 14:22:46,033 - Running model with default Settings:
+2024-12-03 14:22:46,035 - ----------------------------------------------------------------
+2024-12-03 14:22:46,056 - Accuracy score for training set: 0.8669608136404428
+2024-12-03 14:22:46,081 - Accuracy score for cross validation set: 0.7309003888722704
+2024-12-03 14:22:46,082 -  
+2024-12-03 14:22:46,083 - ----------------------------------------------------------------
+2024-12-03 14:22:46,083 - Running model with various parameters:
+2024-12-03 14:22:46,085 - ----------------------------------------------------------------
+2024-12-03 14:22:46,225 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:22:46,248 - Accuracy score for training set: 0.6402183667364643
+2024-12-03 14:22:46,271 - Accuracy score for cross validation set: 0.6305115166018547
+2024-12-03 14:22:46,272 - -----------------------
+2024-12-03 14:22:46,370 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:22:46,384 - Accuracy score for training set: 0.6402183667364643
+2024-12-03 14:22:46,401 - Accuracy score for cross validation set: 0.6305115166018547
+2024-12-03 14:22:46,402 - -----------------------
+2024-12-03 14:22:46,478 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:22:46,494 - Accuracy score for training set: 0.6402183667364643
+2024-12-03 14:22:46,515 - Accuracy score for cross validation set: 0.6305115166018547
+2024-12-03 14:22:46,516 - -----------------------
+2024-12-03 14:22:46,833 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:22:46,850 - Accuracy score for training set: 0.6998205204905773
+2024-12-03 14:22:46,867 - Accuracy score for cross validation set: 0.6918336823212683
+2024-12-03 14:22:46,873 - -----------------------
+2024-12-03 14:22:47,049 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:22:47,072 - Accuracy score for training set: 0.6998205204905773
+2024-12-03 14:22:47,095 - Accuracy score for cross validation set: 0.6918336823212683
+2024-12-03 14:22:47,097 - -----------------------
+2024-12-03 14:22:47,345 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:22:47,372 - Accuracy score for training set: 0.6998205204905773
+2024-12-03 14:22:47,398 - Accuracy score for cross validation set: 0.6918336823212683
+2024-12-03 14:22:47,399 - -----------------------
+2024-12-03 14:22:47,661 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:22:47,679 - Accuracy score for training set: 0.7489530361950344
+2024-12-03 14:22:47,700 - Accuracy score for cross validation set: 0.7160035895901885
+2024-12-03 14:22:47,701 - -----------------------
+2024-12-03 14:22:47,977 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:22:47,995 - Accuracy score for training set: 0.7488782530661083
+2024-12-03 14:22:48,028 - Accuracy score for cross validation set: 0.7160035895901885
+2024-12-03 14:22:48,029 - -----------------------
+2024-12-03 14:22:48,321 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:22:48,342 - Accuracy score for training set: 0.7495513012264433
+2024-12-03 14:22:48,367 - Accuracy score for cross validation set: 0.7169009871373018
+2024-12-03 14:22:48,367 - -----------------------
+2024-12-03 14:22:48,455 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:22:48,471 - Accuracy score for training set: 0.7434190846545019
+2024-12-03 14:22:48,486 - Accuracy score for cross validation set: 0.7334729285073287
+2024-12-03 14:22:48,487 - -----------------------
+2024-12-03 14:22:48,595 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:22:48,612 - Accuracy score for training set: 0.7434190846545019
+2024-12-03 14:22:48,635 - Accuracy score for cross validation set: 0.7334729285073287
+2024-12-03 14:22:48,636 - -----------------------
+2024-12-03 14:22:48,732 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:22:48,755 - Accuracy score for training set: 0.7434190846545019
+2024-12-03 14:22:48,775 - Accuracy score for cross validation set: 0.7334729285073287
+2024-12-03 14:22:48,776 - -----------------------
+2024-12-03 14:22:48,877 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:22:48,896 - Accuracy score for training set: 0.7614418187256955
+2024-12-03 14:22:48,915 - Accuracy score for cross validation set: 0.739934190846545
+2024-12-03 14:22:48,916 - -----------------------
+2024-12-03 14:22:49,032 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:22:49,055 - Accuracy score for training set: 0.7620400837571044
+2024-12-03 14:22:49,073 - Accuracy score for cross validation set: 0.7402333233622495
+2024-12-03 14:22:49,073 - -----------------------
+2024-12-03 14:22:49,234 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:22:49,251 - Accuracy score for training set: 0.7617409512414
+2024-12-03 14:22:49,277 - Accuracy score for cross validation set: 0.7398743643434041
+2024-12-03 14:22:49,278 - -----------------------
+2024-12-03 14:22:49,495 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:22:49,523 - Accuracy score for training set: 0.8733173795991624
+2024-12-03 14:22:49,548 - Accuracy score for cross validation set: 0.7434041280287167
+2024-12-03 14:22:49,550 - -----------------------
+2024-12-03 14:22:50,054 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:22:50,082 - Accuracy score for training set: 0.8720460664074184
+2024-12-03 14:22:50,110 - Accuracy score for cross validation set: 0.7423870774753216
+2024-12-03 14:22:50,122 - -----------------------
+2024-12-03 14:22:50,412 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:22:50,438 - Accuracy score for training set: 0.8745139096619803
+2024-12-03 14:22:50,475 - Accuracy score for cross validation set: 0.7428058629973078
+2024-12-03 14:22:50,481 - -----------------------
+2024-12-03 14:22:50,612 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:22:50,627 - Accuracy score for training set: 0.7481304217768472
+2024-12-03 14:22:50,642 - Accuracy score for cross validation set: 0.7359258151361053
+2024-12-03 14:22:50,643 - -----------------------
+2024-12-03 14:22:50,785 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:22:50,800 - Accuracy score for training set: 0.7481304217768472
+2024-12-03 14:22:50,825 - Accuracy score for cross validation set: 0.7359258151361053
+2024-12-03 14:22:50,826 - -----------------------
+2024-12-03 14:22:51,020 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:22:51,036 - Accuracy score for training set: 0.7481304217768472
+2024-12-03 14:22:51,055 - Accuracy score for cross validation set: 0.7359258151361053
+2024-12-03 14:22:51,073 - -----------------------
+2024-12-03 14:22:51,160 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:22:51,175 - Accuracy score for training set: 0.7751271313191744
+2024-12-03 14:22:51,191 - Accuracy score for cross validation set: 0.7386180077774455
+2024-12-03 14:22:51,191 - -----------------------
+2024-12-03 14:22:51,294 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:22:51,310 - Accuracy score for training set: 0.77617409512414
+2024-12-03 14:22:51,326 - Accuracy score for cross validation set: 0.7397547113371223
+2024-12-03 14:22:51,327 - -----------------------
+2024-12-03 14:22:51,443 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:22:51,459 - Accuracy score for training set: 0.7751271313191744
+2024-12-03 14:22:51,477 - Accuracy score for cross validation set: 0.7382590487586
+2024-12-03 14:22:51,478 - -----------------------
+2024-12-03 14:22:51,732 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:22:51,751 - Accuracy score for training set: 0.9380047861202513
+2024-12-03 14:22:51,780 - Accuracy score for cross validation set: 0.7363446006580915
+2024-12-03 14:22:51,782 - -----------------------
+2024-12-03 14:22:51,965 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:22:51,992 - Accuracy score for training set: 0.9353873766078372
+2024-12-03 14:22:52,031 - Accuracy score for cross validation set: 0.7358061621298235
+2024-12-03 14:22:52,032 - -----------------------
+2024-12-03 14:22:52,224 - {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:22:52,356 - Accuracy score for training set: 0.9133263535746335
+2024-12-03 14:22:52,376 - Accuracy score for cross validation set: 0.736045468142387
+2024-12-03 14:22:52,377 - -----------------------
+2024-12-03 14:22:52,542 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:22:52,559 - Accuracy score for training set: 0.7203858809452588
+2024-12-03 14:22:52,577 - Accuracy score for cross validation set: 0.7130122644331439
+2024-12-03 14:22:52,578 - -----------------------
+2024-12-03 14:22:52,746 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:22:52,770 - Accuracy score for training set: 0.7203858809452588
+2024-12-03 14:22:52,794 - Accuracy score for cross validation set: 0.7130122644331439
+2024-12-03 14:22:52,794 - -----------------------
+2024-12-03 14:22:53,297 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:22:53,317 - Accuracy score for training set: 0.7203858809452588
+2024-12-03 14:22:53,336 - Accuracy score for cross validation set: 0.7130122644331439
+2024-12-03 14:22:53,339 - -----------------------
+2024-12-03 14:22:53,546 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:22:53,562 - Accuracy score for training set: 0.744765180975172
+2024-12-03 14:22:53,581 - Accuracy score for cross validation set: 0.7336524080167515
+2024-12-03 14:22:53,584 - -----------------------
+2024-12-03 14:22:53,792 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:22:53,809 - Accuracy score for training set: 0.744765180975172
+2024-12-03 14:22:53,827 - Accuracy score for cross validation set: 0.7336524080167515
+2024-12-03 14:22:53,827 - -----------------------
+2024-12-03 14:22:53,994 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:22:54,025 - Accuracy score for training set: 0.744765180975172
+2024-12-03 14:22:54,045 - Accuracy score for cross validation set: 0.7336524080167515
+2024-12-03 14:22:54,045 - -----------------------
+2024-12-03 14:22:54,548 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:22:54,577 - Accuracy score for training set: 0.7933742147771463
+2024-12-03 14:22:54,626 - Accuracy score for cross validation set: 0.7390367932994316
+2024-12-03 14:22:54,627 - -----------------------
+2024-12-03 14:22:55,143 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:22:55,170 - Accuracy score for training set: 0.792551600358959
+2024-12-03 14:22:55,202 - Accuracy score for cross validation set: 0.7392162728088543
+2024-12-03 14:22:55,203 - -----------------------
+2024-12-03 14:22:55,871 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:22:55,901 - Accuracy score for training set: 0.7922524678432545
+2024-12-03 14:22:55,936 - Accuracy score for cross validation set: 0.7390367932994316
+2024-12-03 14:22:55,938 - -----------------------
+2024-12-03 14:22:56,110 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:22:56,131 - Accuracy score for training set: 0.7481304217768472
+2024-12-03 14:22:56,157 - Accuracy score for cross validation set: 0.7359258151361053
+2024-12-03 14:22:56,158 - -----------------------
+2024-12-03 14:22:56,379 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:22:56,396 - Accuracy score for training set: 0.7481304217768472
+2024-12-03 14:22:56,416 - Accuracy score for cross validation set: 0.7359258151361053
+2024-12-03 14:22:56,419 - -----------------------
+2024-12-03 14:22:56,666 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:22:56,687 - Accuracy score for training set: 0.7481304217768472
+2024-12-03 14:22:56,708 - Accuracy score for cross validation set: 0.7359258151361053
+2024-12-03 14:22:56,709 - -----------------------
+2024-12-03 14:22:56,889 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:22:56,906 - Accuracy score for training set: 0.7746784325456177
+2024-12-03 14:22:56,925 - Accuracy score for cross validation set: 0.7387376607837272
+2024-12-03 14:22:56,928 - -----------------------
+2024-12-03 14:22:57,143 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:22:57,162 - Accuracy score for training set: 0.7752019144481005
+2024-12-03 14:22:57,185 - Accuracy score for cross validation set: 0.7404128028716721
+2024-12-03 14:22:57,186 - -----------------------
+2024-12-03 14:22:57,360 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:22:57,378 - Accuracy score for training set: 0.7738558181274304
+2024-12-03 14:22:57,404 - Accuracy score for cross validation set: 0.7390367932994316
+2024-12-03 14:22:57,405 - -----------------------
+2024-12-03 14:22:57,786 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:22:57,812 - Accuracy score for training set: 0.9317230032904577
+2024-12-03 14:22:57,845 - Accuracy score for cross validation set: 0.7400538438528268
+2024-12-03 14:22:57,846 - -----------------------
+2024-12-03 14:22:58,223 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:22:58,247 - Accuracy score for training set: 0.9287316781334131
+2024-12-03 14:22:58,285 - Accuracy score for cross validation set: 0.7386180077774455
+2024-12-03 14:22:58,286 - -----------------------
+2024-12-03 14:22:58,866 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:22:58,894 - Accuracy score for training set: 0.8975471133712235
+2024-12-03 14:22:58,922 - Accuracy score for cross validation set: 0.7429255160035896
+2024-12-03 14:22:58,924 - -----------------------
+2024-12-03 14:22:59,060 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:22:59,077 - Accuracy score for training set: 0.7568052647322764
+2024-12-03 14:22:59,094 - Accuracy score for cross validation set: 0.7364044271612324
+2024-12-03 14:22:59,105 - -----------------------
+2024-12-03 14:22:59,362 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:22:59,394 - Accuracy score for training set: 0.7568052647322764
+2024-12-03 14:22:59,426 - Accuracy score for cross validation set: 0.7364044271612324
+2024-12-03 14:22:59,427 - -----------------------
+2024-12-03 14:22:59,586 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:22:59,605 - Accuracy score for training set: 0.7568052647322764
+2024-12-03 14:22:59,622 - Accuracy score for cross validation set: 0.7364044271612324
+2024-12-03 14:22:59,624 - -----------------------
+2024-12-03 14:22:59,845 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:22:59,868 - Accuracy score for training set: 0.7992072988333832
+2024-12-03 14:22:59,907 - Accuracy score for cross validation set: 0.7412503739156446
+2024-12-03 14:22:59,909 - -----------------------
+2024-12-03 14:23:00,122 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:23:00,144 - Accuracy score for training set: 0.8022734071193539
+2024-12-03 14:23:00,173 - Accuracy score for cross validation set: 0.7416691594376309
+2024-12-03 14:23:00,174 - -----------------------
+2024-12-03 14:23:00,348 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:23:00,365 - Accuracy score for training set: 0.8042177684714329
+2024-12-03 14:23:00,385 - Accuracy score for cross validation set: 0.7376009572240503
+2024-12-03 14:23:00,387 - -----------------------
+2024-12-03 14:23:00,736 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:23:00,761 - Accuracy score for training set: 0.9883338318875262
+2024-12-03 14:23:00,803 - Accuracy score for cross validation set: 0.7335327550104697
+2024-12-03 14:23:00,805 - -----------------------
+2024-12-03 14:23:01,084 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:23:01,107 - Accuracy score for training set: 0.9637301824708345
+2024-12-03 14:23:01,131 - Accuracy score for cross validation set: 0.7354472031109781
+2024-12-03 14:23:01,132 - -----------------------
+2024-12-03 14:23:01,361 - {'xgboost_classifier__n_estimators': 100, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:23:01,381 - Accuracy score for training set: 0.9133263535746335
+2024-12-03 14:23:01,400 - Accuracy score for cross validation set: 0.736045468142387
+2024-12-03 14:23:01,405 - -----------------------
+2024-12-03 14:23:01,975 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:23:01,995 - Accuracy score for training set: 0.7412503739156446
+2024-12-03 14:23:02,018 - Accuracy score for cross validation set: 0.7326353574633563
+2024-12-03 14:23:02,019 - -----------------------
+2024-12-03 14:23:02,211 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:23:02,232 - Accuracy score for training set: 0.7412503739156446
+2024-12-03 14:23:02,264 - Accuracy score for cross validation set: 0.7326353574633563
+2024-12-03 14:23:02,266 - -----------------------
+2024-12-03 14:23:02,515 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:23:02,533 - Accuracy score for training set: 0.7412503739156446
+2024-12-03 14:23:02,562 - Accuracy score for cross validation set: 0.7326353574633563
+2024-12-03 14:23:02,563 - -----------------------
+2024-12-03 14:23:02,849 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:23:02,872 - Accuracy score for training set: 0.7518695782231528
+2024-12-03 14:23:02,903 - Accuracy score for cross validation set: 0.7376009572240503
+2024-12-03 14:23:02,905 - -----------------------
+2024-12-03 14:23:03,198 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:23:03,228 - Accuracy score for training set: 0.7518695782231528
+2024-12-03 14:23:03,257 - Accuracy score for cross validation set: 0.7374813042177685
+2024-12-03 14:23:03,258 - -----------------------
+2024-12-03 14:23:03,610 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:23:03,634 - Accuracy score for training set: 0.7517200119653006
+2024-12-03 14:23:03,658 - Accuracy score for cross validation set: 0.7376009572240503
+2024-12-03 14:23:03,659 - -----------------------
+2024-12-03 14:23:04,578 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:23:04,612 - Accuracy score for training set: 0.8208196230930302
+2024-12-03 14:23:04,685 - Accuracy score for cross validation set: 0.7402333233622495
+2024-12-03 14:23:04,687 - -----------------------
+2024-12-03 14:23:05,716 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:23:05,760 - Accuracy score for training set: 0.8208944062219563
+2024-12-03 14:23:05,822 - Accuracy score for cross validation set: 0.7413102004187855
+2024-12-03 14:23:05,823 - -----------------------
+2024-12-03 14:23:07,860 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.01, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:23:07,938 - Accuracy score for training set: 0.8229135507029615
+2024-12-03 14:23:08,036 - Accuracy score for cross validation set: 0.7413700269219264
+2024-12-03 14:23:08,039 - -----------------------
+2024-12-03 14:23:08,331 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:23:08,357 - Accuracy score for training set: 0.7551600358959019
+2024-12-03 14:23:08,388 - Accuracy score for cross validation set: 0.7368232126832187
+2024-12-03 14:23:08,390 - -----------------------
+2024-12-03 14:23:08,704 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:23:08,740 - Accuracy score for training set: 0.7551600358959019
+2024-12-03 14:23:08,771 - Accuracy score for cross validation set: 0.7368232126832187
+2024-12-03 14:23:08,773 - -----------------------
+2024-12-03 14:23:09,259 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:23:09,285 - Accuracy score for training set: 0.7551600358959019
+2024-12-03 14:23:09,318 - Accuracy score for cross validation set: 0.7368232126832187
+2024-12-03 14:23:09,320 - -----------------------
+2024-12-03 14:23:09,752 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:23:09,781 - Accuracy score for training set: 0.7954681423870775
+2024-12-03 14:23:09,818 - Accuracy score for cross validation set: 0.7377804367334729
+2024-12-03 14:23:09,819 - -----------------------
+2024-12-03 14:23:10,163 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:23:10,192 - Accuracy score for training set: 0.7994316482201616
+2024-12-03 14:23:10,227 - Accuracy score for cross validation set: 0.7401136703559676
+2024-12-03 14:23:10,227 - -----------------------
+2024-12-03 14:23:10,479 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:23:10,502 - Accuracy score for training set: 0.782755010469638
+2024-12-03 14:23:10,560 - Accuracy score for cross validation set: 0.7384385282680227
+2024-12-03 14:23:10,561 - -----------------------
+2024-12-03 14:23:11,742 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:23:11,785 - Accuracy score for training set: 0.9857912055040383
+2024-12-03 14:23:11,837 - Accuracy score for cross validation set: 0.7330541429853425
+2024-12-03 14:23:11,838 - -----------------------
+2024-12-03 14:23:12,459 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:23:12,496 - Accuracy score for training set: 0.9451839664971582
+2024-12-03 14:23:12,530 - Accuracy score for cross validation set: 0.7386778342805863
+2024-12-03 14:23:12,537 - -----------------------
+2024-12-03 14:23:12,925 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:23:12,950 - Accuracy score for training set: 0.8974723302422973
+2024-12-03 14:23:12,976 - Accuracy score for cross validation set: 0.7429255160035896
+2024-12-03 14:23:12,980 - -----------------------
+2024-12-03 14:23:13,653 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:23:13,680 - Accuracy score for training set: 0.7698923122943464
+2024-12-03 14:23:13,707 - Accuracy score for cross validation set: 0.7358061621298235
+2024-12-03 14:23:13,708 - -----------------------
+2024-12-03 14:23:14,056 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:23:14,080 - Accuracy score for training set: 0.7698923122943464
+2024-12-03 14:23:14,109 - Accuracy score for cross validation set: 0.7358061621298235
+2024-12-03 14:23:14,113 - -----------------------
+2024-12-03 14:23:14,406 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 3, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:23:14,433 - Accuracy score for training set: 0.7623392162728089
+2024-12-03 14:23:14,459 - Accuracy score for cross validation set: 0.7368830391863596
+2024-12-03 14:23:14,460 - -----------------------
+2024-12-03 14:23:14,929 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:23:14,956 - Accuracy score for training set: 0.8437032605444211
+2024-12-03 14:23:14,986 - Accuracy score for cross validation set: 0.7349087645827102
+2024-12-03 14:23:14,987 - -----------------------
+2024-12-03 14:23:15,357 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:23:15,380 - Accuracy score for training set: 0.8295692491773856
+2024-12-03 14:23:15,406 - Accuracy score for cross validation set: 0.7392162728088543
+2024-12-03 14:23:15,407 - -----------------------
+2024-12-03 14:23:15,631 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 5, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:23:15,653 - Accuracy score for training set: 0.8050403828896201
+2024-12-03 14:23:15,675 - Accuracy score for cross validation set: 0.7380197427460365
+2024-12-03 14:23:15,680 - -----------------------
+2024-12-03 14:23:16,816 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:23:16,862 - Accuracy score for training set: 0.9995513012264433
+2024-12-03 14:23:16,913 - Accuracy score for cross validation set: 0.7292252467843254
+2024-12-03 14:23:16,914 - -----------------------
+2024-12-03 14:23:17,664 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0.1}
+2024-12-03 14:23:17,690 - Accuracy score for training set: 0.9637301824708345
+2024-12-03 14:23:17,718 - Accuracy score for cross validation set: 0.7354472031109781
+2024-12-03 14:23:17,719 - -----------------------
+2024-12-03 14:23:18,166 - {'xgboost_classifier__n_estimators': 200, 'xgboost_classifier__learning_rate': 0.2, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0.2}
+2024-12-03 14:23:18,193 - Accuracy score for training set: 0.9133263535746335
+2024-12-03 14:23:18,229 - Accuracy score for cross validation set: 0.736045468142387
+2024-12-03 14:23:18,230 - -----------------------
+2024-12-03 14:23:18,230 - ----------------------------------------------------------------
+2024-12-03 14:23:18,230 - Best Model: xgboost_classifier
+2024-12-03 14:23:18,232 - Best Accuracy Score: 0.7434
+2024-12-03 14:23:18,232 - Best Parameters: {'xgboost_classifier__n_estimators': 50, 'xgboost_classifier__learning_rate': 0.1, 'xgboost_classifier__max_depth': 10, 'xgboost_classifier__gamma': 0}
+2024-12-03 14:23:18,232 - ----------------------------------------------------------------
+2024-12-03 14:23:18,233 - End of Initial Model Evaluation

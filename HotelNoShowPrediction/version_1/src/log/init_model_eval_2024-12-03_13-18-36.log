@@ -1,0 +1,892 @@
+2024-12-03 13:18:36,491 - Begin Initial Model Evaluation Run
+2024-12-03 13:18:36,492 - ----------------------------------------------------------------
+2024-12-03 13:18:36,746 - Train and CV dataset formed
+2024-12-03 13:18:36,747 - Size of X_train is: 66858
+2024-12-03 13:18:36,748 - Size of y_train is: 66858
+2024-12-03 13:18:36,748 - Size of X_cv is: 16715
+2024-12-03 13:18:36,749 - Size of y_cv is: 16715
+2024-12-03 13:18:36,755 - ----------------------------------------------------------------
+2024-12-03 13:18:36,755 - Training dataset after downsize
+2024-12-03 13:18:36,756 - Size of X_train is: 20057
+2024-12-03 13:18:36,756 - Size of y_train is: 20057
+2024-12-03 13:18:36,757 -  
+2024-12-03 13:18:36,757 - Evaluating model: rf_classifier
+2024-12-03 13:18:36,757 - ----------------------------------------------------------------
+2024-12-03 13:18:39,297 - Running model with default Settings:
+2024-12-03 13:18:39,298 - ----------------------------------------------------------------
+2024-12-03 13:18:39,707 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 13:18:40,037 - Accuracy score for cross validation set: 0.750942267424469
+2024-12-03 13:18:40,038 -  
+2024-12-03 13:18:40,038 - ----------------------------------------------------------------
+2024-12-03 13:18:40,038 - Running model with various parameters:
+2024-12-03 13:18:40,039 - ----------------------------------------------------------------
+2024-12-03 13:18:55,147 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:18:57,023 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 13:18:58,573 - Accuracy score for cross validation set: 0.7532755010469638
+2024-12-03 13:18:58,573 - -----------------------
+2024-12-03 13:19:11,004 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:19:13,269 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 13:19:15,100 - Accuracy score for cross validation set: 0.7532755010469638
+2024-12-03 13:19:15,100 - -----------------------
+2024-12-03 13:19:29,761 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:19:32,002 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 13:19:33,869 - Accuracy score for cross validation set: 0.7504636553993419
+2024-12-03 13:19:33,870 - -----------------------
+2024-12-03 13:19:46,652 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:19:48,895 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 13:19:50,811 - Accuracy score for cross validation set: 0.75100209392761
+2024-12-03 13:19:50,812 - -----------------------
+2024-12-03 13:20:05,531 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:20:07,524 - Accuracy score for training set: 0.9665952036695418
+2024-12-03 13:20:09,257 - Accuracy score for cross validation set: 0.7469937182171702
+2024-12-03 13:20:09,258 - -----------------------
+2024-12-03 13:20:22,148 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:20:24,173 - Accuracy score for training set: 0.9675923617689585
+2024-12-03 13:20:25,865 - Accuracy score for cross validation set: 0.7463954531857613
+2024-12-03 13:20:25,865 - -----------------------
+2024-12-03 13:20:39,235 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:20:41,273 - Accuracy score for training set: 0.9577204965847335
+2024-12-03 13:20:42,998 - Accuracy score for cross validation set: 0.7441818725695483
+2024-12-03 13:20:42,998 - -----------------------
+2024-12-03 13:20:54,506 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:20:56,518 - Accuracy score for training set: 0.9561250436256669
+2024-12-03 13:20:58,335 - Accuracy score for cross validation set: 0.7435836075381393
+2024-12-03 13:20:58,335 - -----------------------
+2024-12-03 13:21:11,874 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:21:13,730 - Accuracy score for training set: 0.8707683103156005
+2024-12-03 13:21:15,271 - Accuracy score for cross validation set: 0.7390966198025726
+2024-12-03 13:21:15,271 - -----------------------
+2024-12-03 13:21:26,838 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:21:28,695 - Accuracy score for training set: 0.871815326319988
+2024-12-03 13:21:30,305 - Accuracy score for cross validation set: 0.7401136703559676
+2024-12-03 13:21:30,306 - -----------------------
+2024-12-03 13:21:42,355 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:21:44,155 - Accuracy score for training set: 0.8576058234033006
+2024-12-03 13:21:45,693 - Accuracy score for cross validation set: 0.7377804367334729
+2024-12-03 13:21:45,694 - -----------------------
+2024-12-03 13:21:56,200 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:21:57,993 - Accuracy score for training set: 0.8582041182629506
+2024-12-03 13:21:59,507 - Accuracy score for cross validation set: 0.7393359258151361
+2024-12-03 13:21:59,507 - -----------------------
+2024-12-03 13:22:15,296 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:22:17,466 - Accuracy score for training set: 0.9988532681856709
+2024-12-03 13:22:19,272 - Accuracy score for cross validation set: 0.7507627879150464
+2024-12-03 13:22:19,273 - -----------------------
+2024-12-03 13:22:32,955 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:22:35,137 - Accuracy score for training set: 0.9990028419005833
+2024-12-03 13:22:36,946 - Accuracy score for cross validation set: 0.7535148070595273
+2024-12-03 13:22:36,947 - -----------------------
+2024-12-03 13:22:51,191 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:22:53,422 - Accuracy score for training set: 0.9986039786608166
+2024-12-03 13:22:55,230 - Accuracy score for cross validation set: 0.7499850433742148
+2024-12-03 13:22:55,231 - -----------------------
+2024-12-03 13:23:07,638 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:23:09,831 - Accuracy score for training set: 0.9986039786608166
+2024-12-03 13:23:11,630 - Accuracy score for cross validation set: 0.7501046963804966
+2024-12-03 13:23:11,631 - -----------------------
+2024-12-03 13:23:26,254 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:23:28,321 - Accuracy score for training set: 0.9672932143391335
+2024-12-03 13:23:30,046 - Accuracy score for cross validation set: 0.745976667663775
+2024-12-03 13:23:30,047 - -----------------------
+2024-12-03 13:23:42,881 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:23:44,928 - Accuracy score for training set: 0.9663459141446876
+2024-12-03 13:23:46,625 - Accuracy score for cross validation set: 0.7462758001794795
+2024-12-03 13:23:46,626 - -----------------------
+2024-12-03 13:23:59,996 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:24:02,034 - Accuracy score for training set: 0.9574213491549085
+2024-12-03 13:24:03,712 - Accuracy score for cross validation set: 0.7437630870475621
+2024-12-03 13:24:03,712 - -----------------------
+2024-12-03 13:24:15,124 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:24:17,204 - Accuracy score for training set: 0.9586677967791793
+2024-12-03 13:24:19,120 - Accuracy score for cross validation set: 0.7436434340412803
+2024-12-03 13:24:19,120 - -----------------------
+2024-12-03 13:24:30,687 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:24:32,237 - Accuracy score for training set: 0.8711671735553672
+2024-12-03 13:24:33,520 - Accuracy score for cross validation set: 0.7395752318276997
+2024-12-03 13:24:33,521 - -----------------------
+2024-12-03 13:24:43,960 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:24:45,545 - Accuracy score for training set: 0.8707184524106297
+2024-12-03 13:24:46,891 - Accuracy score for cross validation set: 0.7397547113371223
+2024-12-03 13:24:46,892 - -----------------------
+2024-12-03 13:24:57,304 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:24:58,897 - Accuracy score for training set: 0.8575061075933589
+2024-12-03 13:25:00,213 - Accuracy score for cross validation set: 0.7386778342805863
+2024-12-03 13:25:00,213 - -----------------------
+2024-12-03 13:25:08,914 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:25:10,540 - Accuracy score for training set: 0.858403549882834
+2024-12-03 13:25:11,857 - Accuracy score for cross validation set: 0.7396350583308405
+2024-12-03 13:25:11,857 - -----------------------
+2024-12-03 13:25:24,653 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:25:26,442 - Accuracy score for training set: 0.9840953283143042
+2024-12-03 13:25:27,927 - Accuracy score for cross validation set: 0.7512413999401735
+2024-12-03 13:25:27,928 - -----------------------
+2024-12-03 13:25:39,062 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:25:40,849 - Accuracy score for training set: 0.9842947599341876
+2024-12-03 13:25:42,309 - Accuracy score for cross validation set: 0.7483099012862698
+2024-12-03 13:25:42,309 - -----------------------
+2024-12-03 13:25:53,755 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:25:55,537 - Accuracy score for training set: 0.9808545644912001
+2024-12-03 13:25:57,041 - Accuracy score for cross validation set: 0.7463356266826204
+2024-12-03 13:25:57,042 - -----------------------
+2024-12-03 13:26:07,039 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:26:08,831 - Accuracy score for training set: 0.9817021488757043
+2024-12-03 13:26:10,336 - Accuracy score for cross validation set: 0.7462159736763386
+2024-12-03 13:26:10,336 - -----------------------
+2024-12-03 13:26:23,060 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:26:24,843 - Accuracy score for training set: 0.957271775439996
+2024-12-03 13:26:26,348 - Accuracy score for cross validation set: 0.7469937182171702
+2024-12-03 13:26:26,349 - -----------------------
+2024-12-03 13:26:37,357 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:26:39,082 - Accuracy score for training set: 0.9557261803859002
+2024-12-03 13:26:40,535 - Accuracy score for cross validation set: 0.7457373616512115
+2024-12-03 13:26:40,535 - -----------------------
+2024-12-03 13:26:51,660 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:26:53,412 - Accuracy score for training set: 0.9456548835817918
+2024-12-03 13:26:54,853 - Accuracy score for cross validation set: 0.7422674244690398
+2024-12-03 13:26:54,853 - -----------------------
+2024-12-03 13:27:04,998 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:27:06,929 - Accuracy score for training set: 0.9467018995861793
+2024-12-03 13:27:08,617 - Accuracy score for cross validation set: 0.7431049955130122
+2024-12-03 13:27:08,617 - -----------------------
+2024-12-03 13:27:21,892 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:27:23,676 - Accuracy score for training set: 0.8715660367951339
+2024-12-03 13:27:25,161 - Accuracy score for cross validation set: 0.738857313790009
+2024-12-03 13:27:25,162 - -----------------------
+2024-12-03 13:27:36,476 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:27:38,260 - Accuracy score for training set: 0.8713666051752506
+2024-12-03 13:27:39,773 - Accuracy score for cross validation set: 0.7407119353873766
+2024-12-03 13:27:39,774 - -----------------------
+2024-12-03 13:27:51,493 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:27:53,313 - Accuracy score for training set: 0.8596001396021339
+2024-12-03 13:27:54,833 - Accuracy score for cross validation set: 0.7392162728088543
+2024-12-03 13:27:54,833 - -----------------------
+2024-12-03 13:28:04,734 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:28:06,476 - Accuracy score for training set: 0.8569576706386798
+2024-12-03 13:28:07,962 - Accuracy score for cross validation set: 0.7376607837271911
+2024-12-03 13:28:07,962 - -----------------------
+2024-12-03 13:28:23,477 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:28:25,593 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 13:28:27,410 - Accuracy score for cross validation set: 0.7545318576129225
+2024-12-03 13:28:27,411 - -----------------------
+2024-12-03 13:28:40,964 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:28:43,159 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 13:28:44,977 - Accuracy score for cross validation set: 0.7535148070595273
+2024-12-03 13:28:44,978 - -----------------------
+2024-12-03 13:28:59,808 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:29:02,054 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 13:29:03,949 - Accuracy score for cross validation set: 0.7497457373616512
+2024-12-03 13:29:03,949 - -----------------------
+2024-12-03 13:29:16,709 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:29:18,957 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 13:29:20,870 - Accuracy score for cross validation set: 0.7514208794495961
+2024-12-03 13:29:20,870 - -----------------------
+2024-12-03 13:29:35,703 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:29:37,720 - Accuracy score for training set: 0.9667946352894251
+2024-12-03 13:29:39,451 - Accuracy score for cross validation set: 0.7463954531857613
+2024-12-03 13:29:39,451 - -----------------------
+2024-12-03 13:29:52,378 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:29:54,459 - Accuracy score for training set: 0.9673430722441043
+2024-12-03 13:29:56,200 - Accuracy score for cross validation set: 0.7454382291355071
+2024-12-03 13:29:56,201 - -----------------------
+2024-12-03 13:30:09,464 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:30:11,641 - Accuracy score for training set: 0.9582689335394127
+2024-12-03 13:30:13,336 - Accuracy score for cross validation set: 0.7436434340412803
+2024-12-03 13:30:13,337 - -----------------------
+2024-12-03 13:30:24,817 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:30:26,879 - Accuracy score for training set: 0.9579199282046168
+2024-12-03 13:30:28,643 - Accuracy score for cross validation set: 0.7431648220161532
+2024-12-03 13:30:28,644 - -----------------------
+2024-12-03 13:30:42,204 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:30:44,056 - Accuracy score for training set: 0.8719150421299297
+2024-12-03 13:30:45,584 - Accuracy score for cross validation set: 0.7404128028716721
+2024-12-03 13:30:45,585 - -----------------------
+2024-12-03 13:30:57,292 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:30:59,183 - Accuracy score for training set: 0.8716158947001047
+2024-12-03 13:31:00,735 - Accuracy score for cross validation set: 0.7394555788214179
+2024-12-03 13:31:00,735 - -----------------------
+2024-12-03 13:31:12,845 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:31:14,642 - Accuracy score for training set: 0.8577055392132422
+2024-12-03 13:31:16,204 - Accuracy score for cross validation set: 0.7384385282680227
+2024-12-03 13:31:16,204 - -----------------------
+2024-12-03 13:31:26,474 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:31:28,297 - Accuracy score for training set: 0.8578052550231839
+2024-12-03 13:31:29,867 - Accuracy score for cross validation set: 0.7390966198025726
+2024-12-03 13:31:29,868 - -----------------------
+2024-12-03 13:31:45,521 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:31:47,682 - Accuracy score for training set: 0.9988532681856709
+2024-12-03 13:31:49,513 - Accuracy score for cross validation set: 0.7528567155249776
+2024-12-03 13:31:49,513 - -----------------------
+2024-12-03 13:32:03,531 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:32:05,662 - Accuracy score for training set: 0.9989031260906417
+2024-12-03 13:32:07,468 - Accuracy score for cross validation set: 0.7523182769967095
+2024-12-03 13:32:07,469 - -----------------------
+2024-12-03 13:32:24,554 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:32:27,371 - Accuracy score for training set: 0.9988034102807
+2024-12-03 13:32:29,438 - Accuracy score for cross validation set: 0.7489081663176788
+2024-12-03 13:32:29,439 - -----------------------
+2024-12-03 13:32:42,948 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:32:45,148 - Accuracy score for training set: 0.9988532681856709
+2024-12-03 13:32:47,016 - Accuracy score for cross validation set: 0.7492072988333832
+2024-12-03 13:32:47,017 - -----------------------
+2024-12-03 13:33:02,691 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:33:04,734 - Accuracy score for training set: 0.9673929301490751
+2024-12-03 13:33:06,450 - Accuracy score for cross validation set: 0.7469937182171702
+2024-12-03 13:33:06,451 - -----------------------
+2024-12-03 13:33:19,729 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:33:21,731 - Accuracy score for training set: 0.9668943510993668
+2024-12-03 13:33:23,975 - Accuracy score for cross validation set: 0.7457373616512115
+2024-12-03 13:33:23,976 - -----------------------
+2024-12-03 13:33:36,533 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:33:38,274 - Accuracy score for training set: 0.9581193598245001
+2024-12-03 13:33:39,706 - Accuracy score for cross validation set: 0.7430451690098714
+2024-12-03 13:33:39,706 - -----------------------
+2024-12-03 13:33:49,583 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:33:51,300 - Accuracy score for training set: 0.9575210649648501
+2024-12-03 13:33:52,720 - Accuracy score for cross validation set: 0.7437032605444212
+2024-12-03 13:33:52,721 - -----------------------
+2024-12-03 13:34:04,217 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:34:05,727 - Accuracy score for training set: 0.8714164630802214
+2024-12-03 13:34:07,025 - Accuracy score for cross validation set: 0.7402931498653904
+2024-12-03 13:34:07,025 - -----------------------
+2024-12-03 13:34:16,699 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:34:18,240 - Accuracy score for training set: 0.8717654684150172
+2024-12-03 13:34:19,527 - Accuracy score for cross validation set: 0.7400538438528268
+2024-12-03 13:34:19,528 - -----------------------
+2024-12-03 13:34:29,609 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:34:31,148 - Accuracy score for training set: 0.8573066759734755
+2024-12-03 13:34:32,451 - Accuracy score for cross validation set: 0.738318875261741
+2024-12-03 13:34:32,452 - -----------------------
+2024-12-03 13:34:41,199 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:34:42,699 - Accuracy score for training set: 0.8577553971182131
+2024-12-03 13:34:43,960 - Accuracy score for cross validation set: 0.7387376607837272
+2024-12-03 13:34:43,961 - -----------------------
+2024-12-03 13:34:56,583 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:34:58,350 - Accuracy score for training set: 0.9852919180336043
+2024-12-03 13:34:59,809 - Accuracy score for cross validation set: 0.7479509422674244
+2024-12-03 13:34:59,809 - -----------------------
+2024-12-03 13:35:10,880 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:35:12,621 - Accuracy score for training set: 0.9848930547938376
+2024-12-03 13:35:14,078 - Accuracy score for cross validation set: 0.7507029614119055
+2024-12-03 13:35:14,078 - -----------------------
+2024-12-03 13:35:25,422 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:35:27,219 - Accuracy score for training set: 0.9823004437353542
+2024-12-03 13:35:28,709 - Accuracy score for cross validation set: 0.7467544122046066
+2024-12-03 13:35:28,709 - -----------------------
+2024-12-03 13:35:38,690 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:35:40,512 - Accuracy score for training set: 0.9820012963055292
+2024-12-03 13:35:42,002 - Accuracy score for cross validation set: 0.7480107687705654
+2024-12-03 13:35:42,002 - -----------------------
+2024-12-03 13:35:54,395 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:35:56,105 - Accuracy score for training set: 0.954878596001396
+2024-12-03 13:35:57,549 - Accuracy score for cross validation set: 0.7454980556386479
+2024-12-03 13:35:57,549 - -----------------------
+2024-12-03 13:36:08,274 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:36:09,956 - Accuracy score for training set: 0.9571222017250836
+2024-12-03 13:36:11,391 - Accuracy score for cross validation set: 0.7451989231229434
+2024-12-03 13:36:11,391 - -----------------------
+2024-12-03 13:36:22,449 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:36:24,158 - Accuracy score for training set: 0.9464027521563544
+2024-12-03 13:36:25,552 - Accuracy score for cross validation set: 0.7434041280287167
+2024-12-03 13:36:25,552 - -----------------------
+2024-12-03 13:36:35,101 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:36:36,763 - Accuracy score for training set: 0.9472503365408586
+2024-12-03 13:36:38,195 - Accuracy score for cross validation set: 0.7431648220161532
+2024-12-03 13:36:38,195 - -----------------------
+2024-12-03 13:36:49,652 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:36:51,209 - Accuracy score for training set: 0.8717156105100463
+2024-12-03 13:36:52,509 - Accuracy score for cross validation set: 0.7390966198025726
+2024-12-03 13:36:52,510 - -----------------------
+2024-12-03 13:37:02,433 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:37:03,984 - Accuracy score for training set: 0.8709677419354839
+2024-12-03 13:37:05,266 - Accuracy score for cross validation set: 0.7402333233622495
+2024-12-03 13:37:05,267 - -----------------------
+2024-12-03 13:37:15,424 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:37:17,006 - Accuracy score for training set: 0.8577055392132422
+2024-12-03 13:37:18,294 - Accuracy score for cross validation set: 0.7373616512114867
+2024-12-03 13:37:18,294 - -----------------------
+2024-12-03 13:37:26,918 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:37:28,473 - Accuracy score for training set: 0.8583038340728922
+2024-12-03 13:37:29,744 - Accuracy score for cross validation set: 0.738857313790009
+2024-12-03 13:37:29,745 - -----------------------
+2024-12-03 13:37:43,216 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:37:45,059 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 13:37:46,715 - Accuracy score for cross validation set: 0.7547113371223452
+2024-12-03 13:37:46,716 - -----------------------
+2024-12-03 13:37:58,718 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:38:00,649 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 13:38:02,227 - Accuracy score for cross validation set: 0.7545318576129225
+2024-12-03 13:38:02,227 - -----------------------
+2024-12-03 13:38:16,087 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:38:18,271 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 13:38:20,141 - Accuracy score for cross validation set: 0.7507627879150464
+2024-12-03 13:38:20,142 - -----------------------
+2024-12-03 13:38:32,592 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:38:34,757 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 13:38:36,590 - Accuracy score for cross validation set: 0.750403828896201
+2024-12-03 13:38:36,591 - -----------------------
+2024-12-03 13:38:51,129 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:38:53,216 - Accuracy score for training set: 0.9674427880540459
+2024-12-03 13:38:54,986 - Accuracy score for cross validation set: 0.747113371223452
+2024-12-03 13:38:54,987 - -----------------------
+2024-12-03 13:39:08,176 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:39:10,236 - Accuracy score for training set: 0.9679912250087251
+2024-12-03 13:39:11,919 - Accuracy score for cross validation set: 0.7466347591983249
+2024-12-03 13:39:11,919 - -----------------------
+2024-12-03 13:39:25,228 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:39:27,247 - Accuracy score for training set: 0.9577703544897044
+2024-12-03 13:39:28,994 - Accuracy score for cross validation set: 0.7433443015255758
+2024-12-03 13:39:28,995 - -----------------------
+2024-12-03 13:39:40,665 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:39:42,790 - Accuracy score for training set: 0.9570224859151418
+2024-12-03 13:39:44,508 - Accuracy score for cross validation set: 0.7434041280287167
+2024-12-03 13:39:44,508 - -----------------------
+2024-12-03 13:39:58,205 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:40:00,033 - Accuracy score for training set: 0.871217031460338
+2024-12-03 13:40:01,558 - Accuracy score for cross validation set: 0.7396948848339815
+2024-12-03 13:40:01,558 - -----------------------
+2024-12-03 13:40:13,661 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:40:15,501 - Accuracy score for training set: 0.8706685945056589
+2024-12-03 13:40:17,210 - Accuracy score for cross validation set: 0.739994017349686
+2024-12-03 13:40:17,211 - -----------------------
+2024-12-03 13:40:29,302 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:40:31,112 - Accuracy score for training set: 0.8593009921723089
+2024-12-03 13:40:32,622 - Accuracy score for cross validation set: 0.7385581812743045
+2024-12-03 13:40:32,623 - -----------------------
+2024-12-03 13:40:41,646 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:40:43,202 - Accuracy score for training set: 0.8577553971182131
+2024-12-03 13:40:44,461 - Accuracy score for cross validation set: 0.7384385282680227
+2024-12-03 13:40:44,461 - -----------------------
+2024-12-03 13:40:59,319 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:41:01,433 - Accuracy score for training set: 0.999102557710525
+2024-12-03 13:41:03,049 - Accuracy score for cross validation set: 0.7516601854621597
+2024-12-03 13:41:03,050 - -----------------------
+2024-12-03 13:41:15,306 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:41:17,223 - Accuracy score for training set: 0.9990028419005833
+2024-12-03 13:41:18,855 - Accuracy score for cross validation set: 0.7514208794495961
+2024-12-03 13:41:18,856 - -----------------------
+2024-12-03 13:41:31,802 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:41:33,833 - Accuracy score for training set: 0.9985541207558458
+2024-12-03 13:41:35,575 - Accuracy score for cross validation set: 0.7484295542925516
+2024-12-03 13:41:35,576 - -----------------------
+2024-12-03 13:41:46,766 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:41:48,808 - Accuracy score for training set: 0.9987535523757292
+2024-12-03 13:41:50,560 - Accuracy score for cross validation set: 0.7480107687705654
+2024-12-03 13:41:50,561 - -----------------------
+2024-12-03 13:42:05,506 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:42:07,584 - Accuracy score for training set: 0.9673929301490751
+2024-12-03 13:42:09,505 - Accuracy score for cross validation set: 0.7472928507328747
+2024-12-03 13:42:09,505 - -----------------------
+2024-12-03 13:42:21,090 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:42:22,966 - Accuracy score for training set: 0.9669442090043376
+2024-12-03 13:42:24,632 - Accuracy score for cross validation set: 0.7455578821417889
+2024-12-03 13:42:24,643 - -----------------------
+2024-12-03 13:42:36,977 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:42:38,775 - Accuracy score for training set: 0.9566236226753752
+2024-12-03 13:42:40,208 - Accuracy score for cross validation set: 0.7434639545318577
+2024-12-03 13:42:40,208 - -----------------------
+2024-12-03 13:42:50,858 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:42:52,775 - Accuracy score for training set: 0.9574712070598793
+2024-12-03 13:42:54,280 - Accuracy score for cross validation set: 0.7443015255758301
+2024-12-03 13:42:54,280 - -----------------------
+2024-12-03 13:43:07,371 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:43:09,236 - Accuracy score for training set: 0.8714164630802214
+2024-12-03 13:43:10,820 - Accuracy score for cross validation set: 0.739395752318277
+2024-12-03 13:43:10,821 - -----------------------
+2024-12-03 13:43:22,921 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:43:24,746 - Accuracy score for training set: 0.870618736600688
+2024-12-03 13:43:26,436 - Accuracy score for cross validation set: 0.7407119353873766
+2024-12-03 13:43:26,436 - -----------------------
+2024-12-03 13:43:38,683 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:43:40,554 - Accuracy score for training set: 0.8582539761679214
+2024-12-03 13:43:42,220 - Accuracy score for cross validation set: 0.7396948848339815
+2024-12-03 13:43:42,221 - -----------------------
+2024-12-03 13:43:52,940 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:43:54,760 - Accuracy score for training set: 0.8592511342673381
+2024-12-03 13:43:56,310 - Accuracy score for cross validation set: 0.7376009572240503
+2024-12-03 13:43:56,310 - -----------------------
+2024-12-03 13:44:10,503 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:44:12,464 - Accuracy score for training set: 0.9840454704093334
+2024-12-03 13:44:14,083 - Accuracy score for cross validation set: 0.7494466048459467
+2024-12-03 13:44:14,084 - -----------------------
+2024-12-03 13:44:27,195 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:44:29,266 - Accuracy score for training set: 0.9844941915540709
+2024-12-03 13:44:31,020 - Accuracy score for cross validation set: 0.7502243493867783
+2024-12-03 13:44:31,020 - -----------------------
+2024-12-03 13:44:44,710 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:44:46,804 - Accuracy score for training set: 0.9818018646856459
+2024-12-03 13:44:48,649 - Accuracy score for cross validation set: 0.74765180975172
+2024-12-03 13:44:48,649 - -----------------------
+2024-12-03 13:45:00,600 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:45:02,678 - Accuracy score for training set: 0.9819514384005584
+2024-12-03 13:45:04,447 - Accuracy score for cross validation set: 0.7481304217768472
+2024-12-03 13:45:04,448 - -----------------------
+2024-12-03 13:45:19,020 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:45:21,037 - Accuracy score for training set: 0.9573216333449669
+2024-12-03 13:45:22,697 - Accuracy score for cross validation set: 0.7444810050852527
+2024-12-03 13:45:22,698 - -----------------------
+2024-12-03 13:45:35,298 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:45:37,265 - Accuracy score for training set: 0.9576706386797627
+2024-12-03 13:45:38,938 - Accuracy score for cross validation set: 0.7474125037391565
+2024-12-03 13:45:38,938 - -----------------------
+2024-12-03 13:45:52,031 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:45:54,067 - Accuracy score for training set: 0.9459041731066461
+2024-12-03 13:45:55,750 - Accuracy score for cross validation set: 0.7423272509721807
+2024-12-03 13:45:55,751 - -----------------------
+2024-12-03 13:46:07,160 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:46:09,155 - Accuracy score for training set: 0.9467018995861793
+2024-12-03 13:46:10,862 - Accuracy score for cross validation set: 0.742686209991026
+2024-12-03 13:46:10,862 - -----------------------
+2024-12-03 13:46:24,561 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:46:26,490 - Accuracy score for training set: 0.8713666051752506
+2024-12-03 13:46:28,140 - Accuracy score for cross validation set: 0.7389171402931498
+2024-12-03 13:46:28,141 - -----------------------
+2024-12-03 13:46:39,776 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:46:41,643 - Accuracy score for training set: 0.8708680261255421
+2024-12-03 13:46:43,185 - Accuracy score for cross validation set: 0.7404726293748131
+2024-12-03 13:46:43,185 - -----------------------
+2024-12-03 13:46:55,388 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:46:57,197 - Accuracy score for training set: 0.8591015605524256
+2024-12-03 13:46:58,748 - Accuracy score for cross validation set: 0.7384385282680227
+2024-12-03 13:46:58,749 - -----------------------
+2024-12-03 13:47:09,086 - {'rf_classifier__n_estimators': 500, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:47:10,916 - Accuracy score for training set: 0.8572568180685047
+2024-12-03 13:47:12,435 - Accuracy score for cross validation set: 0.7374214777146276
+2024-12-03 13:47:12,436 - -----------------------
+2024-12-03 13:47:31,650 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:47:34,300 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 13:47:36,490 - Accuracy score for cross validation set: 0.7519593179778642
+2024-12-03 13:47:36,491 - -----------------------
+2024-12-03 13:47:53,403 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:47:56,035 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 13:47:58,268 - Accuracy score for cross validation set: 0.7536942865689501
+2024-12-03 13:47:58,269 - -----------------------
+2024-12-03 13:48:16,264 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:48:19,063 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 13:48:21,324 - Accuracy score for cross validation set: 0.7504636553993419
+2024-12-03 13:48:21,325 - -----------------------
+2024-12-03 13:48:36,692 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:48:39,339 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 13:48:41,602 - Accuracy score for cross validation set: 0.750403828896201
+2024-12-03 13:48:41,602 - -----------------------
+2024-12-03 13:48:59,484 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:49:01,966 - Accuracy score for training set: 0.9676422196739293
+2024-12-03 13:49:04,051 - Accuracy score for cross validation set: 0.7473526772360155
+2024-12-03 13:49:04,052 - -----------------------
+2024-12-03 13:49:19,420 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:49:21,924 - Accuracy score for training set: 0.9665952036695418
+2024-12-03 13:49:23,959 - Accuracy score for cross validation set: 0.7457971881543524
+2024-12-03 13:49:23,960 - -----------------------
+2024-12-03 13:49:39,968 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:49:42,393 - Accuracy score for training set: 0.9573714912499377
+2024-12-03 13:49:44,415 - Accuracy score for cross validation set: 0.7452587496260844
+2024-12-03 13:49:44,415 - -----------------------
+2024-12-03 13:49:58,272 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:50:00,686 - Accuracy score for training set: 0.9570723438201126
+2024-12-03 13:50:02,720 - Accuracy score for cross validation set: 0.7438827400538438
+2024-12-03 13:50:02,720 - -----------------------
+2024-12-03 13:50:19,213 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:50:21,397 - Accuracy score for training set: 0.8715660367951339
+2024-12-03 13:50:23,262 - Accuracy score for cross validation set: 0.7386778342805863
+2024-12-03 13:50:23,262 - -----------------------
+2024-12-03 13:50:37,254 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:50:39,509 - Accuracy score for training set: 0.871815326319988
+2024-12-03 13:50:41,428 - Accuracy score for cross validation set: 0.7395154053245587
+2024-12-03 13:50:41,429 - -----------------------
+2024-12-03 13:50:56,015 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:50:58,174 - Accuracy score for training set: 0.8576058234033006
+2024-12-03 13:51:00,021 - Accuracy score for cross validation set: 0.7387974872868681
+2024-12-03 13:51:00,022 - -----------------------
+2024-12-03 13:51:12,453 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:51:14,629 - Accuracy score for training set: 0.8568080969237672
+2024-12-03 13:51:16,445 - Accuracy score for cross validation set: 0.7395752318276997
+2024-12-03 13:51:16,445 - -----------------------
+2024-12-03 13:51:35,205 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:51:37,738 - Accuracy score for training set: 0.9987535523757292
+2024-12-03 13:51:40,345 - Accuracy score for cross validation set: 0.7529763685312594
+2024-12-03 13:51:40,346 - -----------------------
+2024-12-03 13:51:58,128 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:52:00,676 - Accuracy score for training set: 0.9988034102807
+2024-12-03 13:52:02,771 - Accuracy score for cross validation set: 0.7519593179778642
+2024-12-03 13:52:02,771 - -----------------------
+2024-12-03 13:52:19,473 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:52:22,021 - Accuracy score for training set: 0.9984045470409333
+2024-12-03 13:52:24,193 - Accuracy score for cross validation set: 0.749865390367933
+2024-12-03 13:52:24,193 - -----------------------
+2024-12-03 13:52:39,051 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:52:41,556 - Accuracy score for training set: 0.9984544049459042
+2024-12-03 13:52:43,443 - Accuracy score for cross validation set: 0.7496260843553695
+2024-12-03 13:52:43,444 - -----------------------
+2024-12-03 13:53:00,681 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:53:03,034 - Accuracy score for training set: 0.9657974771900085
+2024-12-03 13:53:04,726 - Accuracy score for cross validation set: 0.7462159736763386
+2024-12-03 13:53:04,727 - -----------------------
+2024-12-03 13:53:17,921 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:53:20,145 - Accuracy score for training set: 0.9666949194794835
+2024-12-03 13:53:21,875 - Accuracy score for cross validation set: 0.7465151061920431
+2024-12-03 13:53:21,876 - -----------------------
+2024-12-03 13:53:35,326 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:53:37,373 - Accuracy score for training set: 0.9573714912499377
+2024-12-03 13:53:39,144 - Accuracy score for cross validation set: 0.7444211785821119
+2024-12-03 13:53:39,144 - -----------------------
+2024-12-03 13:53:51,024 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:53:53,297 - Accuracy score for training set: 0.956972628010171
+2024-12-03 13:53:55,008 - Accuracy score for cross validation set: 0.7447203110978163
+2024-12-03 13:53:55,009 - -----------------------
+2024-12-03 13:54:08,920 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:54:10,834 - Accuracy score for training set: 0.8717156105100463
+2024-12-03 13:54:12,407 - Accuracy score for cross validation set: 0.7401136703559676
+2024-12-03 13:54:12,408 - -----------------------
+2024-12-03 13:54:24,448 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:54:26,344 - Accuracy score for training set: 0.8726629107044922
+2024-12-03 13:54:27,927 - Accuracy score for cross validation set: 0.7395752318276997
+2024-12-03 13:54:27,928 - -----------------------
+2024-12-03 13:54:40,467 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:54:42,325 - Accuracy score for training set: 0.8585032656927756
+2024-12-03 13:54:43,867 - Accuracy score for cross validation set: 0.7392760993119952
+2024-12-03 13:54:43,868 - -----------------------
+2024-12-03 13:54:54,244 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:54:56,189 - Accuracy score for training set: 0.8591514184573964
+2024-12-03 13:54:57,872 - Accuracy score for cross validation set: 0.7374214777146276
+2024-12-03 13:54:57,872 - -----------------------
+2024-12-03 13:55:13,175 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:55:15,260 - Accuracy score for training set: 0.9840953283143042
+2024-12-03 13:55:17,066 - Accuracy score for cross validation set: 0.7501046963804966
+2024-12-03 13:55:17,066 - -----------------------
+2024-12-03 13:55:30,639 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:55:32,728 - Accuracy score for training set: 0.9842947599341876
+2024-12-03 13:55:34,503 - Accuracy score for cross validation set: 0.7498055638647921
+2024-12-03 13:55:34,504 - -----------------------
+2024-12-03 13:55:48,924 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:55:51,195 - Accuracy score for training set: 0.9819015804955876
+2024-12-03 13:55:52,989 - Accuracy score for cross validation set: 0.7462159736763386
+2024-12-03 13:55:52,990 - -----------------------
+2024-12-03 13:56:06,052 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:56:08,556 - Accuracy score for training set: 0.9821508700204418
+2024-12-03 13:56:10,700 - Accuracy score for cross validation set: 0.746036494166916
+2024-12-03 13:56:10,700 - -----------------------
+2024-12-03 13:56:28,140 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:56:30,552 - Accuracy score for training set: 0.9562746173405794
+2024-12-03 13:56:32,572 - Accuracy score for cross validation set: 0.7461561471731978
+2024-12-03 13:56:32,573 - -----------------------
+2024-12-03 13:56:47,862 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:56:50,273 - Accuracy score for training set: 0.9562247594356085
+2024-12-03 13:56:52,280 - Accuracy score for cross validation set: 0.7461561471731978
+2024-12-03 13:56:52,281 - -----------------------
+2024-12-03 13:57:10,320 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:57:13,508 - Accuracy score for training set: 0.9458543152016752
+2024-12-03 13:57:15,525 - Accuracy score for cross validation set: 0.7429255160035896
+2024-12-03 13:57:15,526 - -----------------------
+2024-12-03 13:57:27,674 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:57:29,802 - Accuracy score for training set: 0.9454055940569377
+2024-12-03 13:57:31,583 - Accuracy score for cross validation set: 0.7431049955130122
+2024-12-03 13:57:31,583 - -----------------------
+2024-12-03 13:57:46,827 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:57:49,202 - Accuracy score for training set: 0.8719150421299297
+2024-12-03 13:57:51,106 - Accuracy score for cross validation set: 0.7405922823810949
+2024-12-03 13:57:51,107 - -----------------------
+2024-12-03 13:58:06,445 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:58:08,820 - Accuracy score for training set: 0.8708181682205713
+2024-12-03 13:58:10,906 - Accuracy score for cross validation set: 0.7401734968591086
+2024-12-03 13:58:10,906 - -----------------------
+2024-12-03 13:58:25,235 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:58:27,355 - Accuracy score for training set: 0.8587026973126589
+2024-12-03 13:58:29,054 - Accuracy score for cross validation set: 0.738857313790009
+2024-12-03 13:58:29,055 - -----------------------
+2024-12-03 13:58:40,470 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 30, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:58:42,448 - Accuracy score for training set: 0.8576058234033006
+2024-12-03 13:58:44,257 - Accuracy score for cross validation set: 0.7387376607837272
+2024-12-03 13:58:44,257 - -----------------------
+2024-12-03 13:59:02,493 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:59:04,970 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 13:59:07,061 - Accuracy score for cross validation set: 0.7532156745438229
+2024-12-03 13:59:07,061 - -----------------------
+2024-12-03 13:59:22,563 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 13:59:25,113 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 13:59:27,155 - Accuracy score for cross validation set: 0.7539335925815136
+2024-12-03 13:59:27,156 - -----------------------
+2024-12-03 13:59:43,401 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 13:59:45,849 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 13:59:47,915 - Accuracy score for cross validation set: 0.7511815734370326
+2024-12-03 13:59:47,915 - -----------------------
+2024-12-03 14:00:02,274 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:00:04,778 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 14:00:06,868 - Accuracy score for cross validation set: 0.7508226144181872
+2024-12-03 14:00:06,869 - -----------------------
+2024-12-03 14:00:23,346 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:00:25,696 - Accuracy score for training set: 0.9673430722441043
+2024-12-03 14:00:27,578 - Accuracy score for cross validation set: 0.7473526772360155
+2024-12-03 14:00:27,578 - -----------------------
+2024-12-03 14:00:42,082 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:00:44,352 - Accuracy score for training set: 0.9671934985291918
+2024-12-03 14:00:46,233 - Accuracy score for cross validation set: 0.7466347591983249
+2024-12-03 14:00:46,234 - -----------------------
+2024-12-03 14:01:01,339 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:01:03,607 - Accuracy score for training set: 0.9583686493493544
+2024-12-03 14:01:05,603 - Accuracy score for cross validation set: 0.7440622195632666
+2024-12-03 14:01:05,603 - -----------------------
+2024-12-03 14:01:18,288 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:01:20,535 - Accuracy score for training set: 0.9583686493493544
+2024-12-03 14:01:22,398 - Accuracy score for cross validation set: 0.7438827400538438
+2024-12-03 14:01:22,398 - -----------------------
+2024-12-03 14:01:37,482 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:01:39,636 - Accuracy score for training set: 0.8713167472702797
+2024-12-03 14:01:41,402 - Accuracy score for cross validation set: 0.7395752318276997
+2024-12-03 14:01:41,403 - -----------------------
+2024-12-03 14:01:54,596 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:01:56,617 - Accuracy score for training set: 0.8723139053696963
+2024-12-03 14:01:58,418 - Accuracy score for cross validation set: 0.7395752318276997
+2024-12-03 14:01:58,419 - -----------------------
+2024-12-03 14:02:11,888 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:02:13,888 - Accuracy score for training set: 0.8577055392132422
+2024-12-03 14:02:15,614 - Accuracy score for cross validation set: 0.7391564463057134
+2024-12-03 14:02:15,614 - -----------------------
+2024-12-03 14:02:27,243 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:02:29,324 - Accuracy score for training set: 0.858353691977863
+2024-12-03 14:02:31,035 - Accuracy score for cross validation set: 0.739395752318277
+2024-12-03 14:02:31,035 - -----------------------
+2024-12-03 14:02:48,503 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:02:50,919 - Accuracy score for training set: 0.9989529839956125
+2024-12-03 14:02:52,984 - Accuracy score for cross validation set: 0.7511217469338917
+2024-12-03 14:02:52,989 - -----------------------
+2024-12-03 14:03:08,421 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:03:10,856 - Accuracy score for training set: 0.9991524156154958
+2024-12-03 14:03:12,897 - Accuracy score for cross validation set: 0.7521986239904278
+2024-12-03 14:03:12,898 - -----------------------
+2024-12-03 14:03:32,724 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:03:35,401 - Accuracy score for training set: 0.9989529839956125
+2024-12-03 14:03:37,635 - Accuracy score for cross validation set: 0.7505833084056237
+2024-12-03 14:03:37,636 - -----------------------
+2024-12-03 14:03:53,816 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:03:56,506 - Accuracy score for training set: 0.9987535523757292
+2024-12-03 14:03:58,803 - Accuracy score for cross validation set: 0.7500448698773556
+2024-12-03 14:03:58,803 - -----------------------
+2024-12-03 14:04:17,569 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:04:20,168 - Accuracy score for training set: 0.9672433564341626
+2024-12-03 14:04:22,265 - Accuracy score for cross validation set: 0.7472928507328747
+2024-12-03 14:04:22,265 - -----------------------
+2024-12-03 14:04:38,437 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:04:40,999 - Accuracy score for training set: 0.9666450615745127
+2024-12-03 14:04:43,094 - Accuracy score for cross validation set: 0.7463954531857613
+2024-12-03 14:04:43,095 - -----------------------
+2024-12-03 14:04:59,865 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:05:02,436 - Accuracy score for training set: 0.957271775439996
+2024-12-03 14:05:04,528 - Accuracy score for cross validation set: 0.7433443015255758
+2024-12-03 14:05:04,529 - -----------------------
+2024-12-03 14:05:19,193 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:05:21,683 - Accuracy score for training set: 0.9571222017250836
+2024-12-03 14:05:23,795 - Accuracy score for cross validation set: 0.7432844750224349
+2024-12-03 14:05:23,796 - -----------------------
+2024-12-03 14:05:40,774 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:05:43,105 - Accuracy score for training set: 0.8718651842249588
+2024-12-03 14:05:45,023 - Accuracy score for cross validation set: 0.7394555788214179
+2024-12-03 14:05:45,024 - -----------------------
+2024-12-03 14:06:00,018 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:06:02,324 - Accuracy score for training set: 0.8708181682205713
+2024-12-03 14:06:04,336 - Accuracy score for cross validation set: 0.7387376607837272
+2024-12-03 14:06:04,337 - -----------------------
+2024-12-03 14:06:19,951 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:06:22,266 - Accuracy score for training set: 0.8590517026474548
+2024-12-03 14:06:24,263 - Accuracy score for cross validation set: 0.7390367932994316
+2024-12-03 14:06:24,263 - -----------------------
+2024-12-03 14:06:37,445 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:06:39,736 - Accuracy score for training set: 0.8571571022585631
+2024-12-03 14:06:41,716 - Accuracy score for cross validation set: 0.7390367932994316
+2024-12-03 14:06:41,717 - -----------------------
+2024-12-03 14:07:01,190 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:07:03,794 - Accuracy score for training set: 0.9856409233684
+2024-12-03 14:07:06,029 - Accuracy score for cross validation set: 0.7506431349087646
+2024-12-03 14:07:06,030 - -----------------------
+2024-12-03 14:07:23,119 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:07:25,768 - Accuracy score for training set: 0.9849429126988084
+2024-12-03 14:07:27,988 - Accuracy score for cross validation set: 0.7508226144181872
+2024-12-03 14:07:27,988 - -----------------------
+2024-12-03 14:07:45,572 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:07:48,283 - Accuracy score for training set: 0.982101012115471
+2024-12-03 14:07:50,578 - Accuracy score for cross validation set: 0.7468740652108884
+2024-12-03 14:07:50,579 - -----------------------
+2024-12-03 14:08:06,036 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:08:08,745 - Accuracy score for training set: 0.9817520067806751
+2024-12-03 14:08:11,021 - Accuracy score for cross validation set: 0.7460963206700568
+2024-12-03 14:08:11,022 - -----------------------
+2024-12-03 14:08:28,678 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:08:31,205 - Accuracy score for training set: 0.9569227701052002
+2024-12-03 14:08:33,063 - Accuracy score for cross validation set: 0.7454980556386479
+2024-12-03 14:08:33,064 - -----------------------
+2024-12-03 14:08:47,810 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:08:50,107 - Accuracy score for training set: 0.9582190756344419
+2024-12-03 14:08:52,035 - Accuracy score for cross validation set: 0.7454382291355071
+2024-12-03 14:08:52,036 - -----------------------
+2024-12-03 14:09:07,873 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:09:10,099 - Accuracy score for training set: 0.9464027521563544
+2024-12-03 14:09:12,011 - Accuracy score for cross validation set: 0.7429255160035896
+2024-12-03 14:09:12,011 - -----------------------
+2024-12-03 14:09:26,221 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:09:28,770 - Accuracy score for training set: 0.9461036047265294
+2024-12-03 14:09:31,067 - Accuracy score for cross validation set: 0.7428058629973078
+2024-12-03 14:09:31,067 - -----------------------
+2024-12-03 14:09:47,127 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:09:49,159 - Accuracy score for training set: 0.8714663209851922
+2024-12-03 14:09:50,854 - Accuracy score for cross validation set: 0.7389171402931498
+2024-12-03 14:09:50,854 - -----------------------
+2024-12-03 14:10:04,094 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:10:06,191 - Accuracy score for training set: 0.8715660367951339
+2024-12-03 14:10:07,936 - Accuracy score for cross validation set: 0.7395752318276997
+2024-12-03 14:10:07,937 - -----------------------
+2024-12-03 14:10:21,426 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:10:23,433 - Accuracy score for training set: 0.8573066759734755
+2024-12-03 14:10:25,311 - Accuracy score for cross validation set: 0.7380197427460365
+2024-12-03 14:10:25,312 - -----------------------
+2024-12-03 14:10:36,595 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 35, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:10:38,605 - Accuracy score for training set: 0.8588024131226006
+2024-12-03 14:10:40,407 - Accuracy score for cross validation set: 0.7386778342805863
+2024-12-03 14:10:40,407 - -----------------------
+2024-12-03 14:10:58,523 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:11:00,980 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 14:11:03,167 - Accuracy score for cross validation set: 0.7539934190846544
+2024-12-03 14:11:03,168 - -----------------------
+2024-12-03 14:11:18,773 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:11:21,263 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 14:11:23,284 - Accuracy score for cross validation set: 0.7550104696380496
+2024-12-03 14:11:23,285 - -----------------------
+2024-12-03 14:11:39,384 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:11:41,899 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 14:11:44,057 - Accuracy score for cross validation set: 0.7489081663176788
+2024-12-03 14:11:44,058 - -----------------------
+2024-12-03 14:11:58,157 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:12:00,656 - Accuracy score for training set: 0.9995512788552625
+2024-12-03 14:12:02,778 - Accuracy score for cross validation set: 0.7499850433742148
+2024-12-03 14:12:02,778 - -----------------------
+2024-12-03 14:12:19,421 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:12:21,665 - Accuracy score for training set: 0.9663459141446876
+2024-12-03 14:12:23,605 - Accuracy score for cross validation set: 0.7468142387077475
+2024-12-03 14:12:23,606 - -----------------------
+2024-12-03 14:12:37,801 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:12:40,131 - Accuracy score for training set: 0.9672433564341626
+2024-12-03 14:12:42,045 - Accuracy score for cross validation set: 0.745976667663775
+2024-12-03 14:12:42,046 - -----------------------
+2024-12-03 14:12:57,729 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:13:00,133 - Accuracy score for training set: 0.9580196440145585
+2024-12-03 14:13:02,033 - Accuracy score for cross validation set: 0.7453784026323661
+2024-12-03 14:13:02,033 - -----------------------
+2024-12-03 14:13:14,840 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:13:17,050 - Accuracy score for training set: 0.9583187914443835
+2024-12-03 14:13:18,949 - Accuracy score for cross validation set: 0.7442416990726892
+2024-12-03 14:13:18,950 - -----------------------
+2024-12-03 14:13:34,081 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:13:36,104 - Accuracy score for training set: 0.8702198733609213
+2024-12-03 14:13:37,837 - Accuracy score for cross validation set: 0.7395154053245587
+2024-12-03 14:13:37,838 - -----------------------
+2024-12-03 14:13:50,868 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:13:53,023 - Accuracy score for training set: 0.8723139053696963
+2024-12-03 14:13:55,072 - Accuracy score for cross validation set: 0.7386180077774455
+2024-12-03 14:13:55,073 - -----------------------
+2024-12-03 14:14:08,952 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:14:11,063 - Accuracy score for training set: 0.8587026973126589
+2024-12-03 14:14:12,794 - Accuracy score for cross validation set: 0.7387974872868681
+2024-12-03 14:14:12,795 - -----------------------
+2024-12-03 14:14:24,255 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:14:26,257 - Accuracy score for training set: 0.8585531235977464
+2024-12-03 14:14:28,057 - Accuracy score for cross validation set: 0.7379000897397547
+2024-12-03 14:14:28,057 - -----------------------
+2024-12-03 14:14:45,497 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:14:47,909 - Accuracy score for training set: 0.9988034102807
+2024-12-03 14:14:50,016 - Accuracy score for cross validation set: 0.7525575830092731
+2024-12-03 14:14:50,017 - -----------------------
+2024-12-03 14:15:05,670 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:15:08,100 - Accuracy score for training set: 0.9989529839956125
+2024-12-03 14:15:10,165 - Accuracy score for cross validation set: 0.7511815734370326
+2024-12-03 14:15:10,166 - -----------------------
+2024-12-03 14:15:26,146 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:15:28,567 - Accuracy score for training set: 0.9989031260906417
+2024-12-03 14:15:30,656 - Accuracy score for cross validation set: 0.7488483398145378
+2024-12-03 14:15:30,657 - -----------------------
+2024-12-03 14:15:44,459 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:15:46,871 - Accuracy score for training set: 0.9986039786608166
+2024-12-03 14:15:48,874 - Accuracy score for cross validation set: 0.7505833084056237
+2024-12-03 14:15:48,875 - -----------------------
+2024-12-03 14:16:05,300 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:16:07,526 - Accuracy score for training set: 0.9661464825248043
+2024-12-03 14:16:09,407 - Accuracy score for cross validation set: 0.7457373616512115
+2024-12-03 14:16:09,407 - -----------------------
+2024-12-03 14:16:25,094 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:16:27,383 - Accuracy score for training set: 0.9669442090043376
+2024-12-03 14:16:29,282 - Accuracy score for cross validation set: 0.7468740652108884
+2024-12-03 14:16:29,283 - -----------------------
+2024-12-03 14:16:43,992 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:16:46,289 - Accuracy score for training set: 0.9582689335394127
+2024-12-03 14:16:48,203 - Accuracy score for cross validation set: 0.7445408315883937
+2024-12-03 14:16:48,204 - -----------------------
+2024-12-03 14:17:01,512 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:17:03,814 - Accuracy score for training set: 0.9576706386797627
+2024-12-03 14:17:05,736 - Accuracy score for cross validation set: 0.744361352078971
+2024-12-03 14:17:05,736 - -----------------------
+2024-12-03 14:17:21,173 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:17:23,263 - Accuracy score for training set: 0.8708680261255421
+2024-12-03 14:17:25,055 - Accuracy score for cross validation set: 0.7394555788214179
+2024-12-03 14:17:25,055 - -----------------------
+2024-12-03 14:17:38,239 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:17:40,284 - Accuracy score for training set: 0.8709677419354839
+2024-12-03 14:17:42,061 - Accuracy score for cross validation set: 0.7393359258151361
+2024-12-03 14:17:42,062 - -----------------------
+2024-12-03 14:17:55,672 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:17:57,778 - Accuracy score for training set: 0.8570573864486214
+2024-12-03 14:17:59,485 - Accuracy score for cross validation set: 0.7384385282680227
+2024-12-03 14:17:59,486 - -----------------------
+2024-12-03 14:18:11,391 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 3, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:18:13,406 - Accuracy score for training set: 0.856309517874059
+2024-12-03 14:18:15,201 - Accuracy score for cross validation set: 0.7386778342805863
+2024-12-03 14:18:15,202 - -----------------------
+2024-12-03 14:18:32,516 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:18:34,790 - Accuracy score for training set: 0.9853916338435459
+2024-12-03 14:18:36,692 - Accuracy score for cross validation set: 0.7487286868082561
+2024-12-03 14:18:36,693 - -----------------------
+2024-12-03 14:18:51,468 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:18:53,913 - Accuracy score for training set: 0.9847434810789251
+2024-12-03 14:18:55,872 - Accuracy score for cross validation set: 0.7480705952737062
+2024-12-03 14:18:55,872 - -----------------------
+2024-12-03 14:19:11,060 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:19:13,475 - Accuracy score for training set: 0.9825497332602084
+2024-12-03 14:19:15,392 - Accuracy score for cross validation set: 0.7458570146574933
+2024-12-03 14:19:15,393 - -----------------------
+2024-12-03 14:19:28,625 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:19:31,015 - Accuracy score for training set: 0.9818517225906167
+2024-12-03 14:19:32,993 - Accuracy score for cross validation set: 0.7464552796889021
+2024-12-03 14:19:32,993 - -----------------------
+2024-12-03 14:19:49,282 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:19:51,481 - Accuracy score for training set: 0.9558757541008127
+2024-12-03 14:19:53,418 - Accuracy score for cross validation set: 0.7441818725695483
+2024-12-03 14:19:53,419 - -----------------------
+2024-12-03 14:20:07,685 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:20:09,892 - Accuracy score for training set: 0.956673480580346
+2024-12-03 14:20:12,222 - Accuracy score for cross validation set: 0.7446604845946755
+2024-12-03 14:20:12,222 - -----------------------
+2024-12-03 14:20:27,832 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:20:30,154 - Accuracy score for training set: 0.9463528942513836
+2024-12-03 14:20:32,017 - Accuracy score for cross validation set: 0.743822913550703
+2024-12-03 14:20:32,018 - -----------------------
+2024-12-03 14:20:44,633 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 2, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:20:46,880 - Accuracy score for training set: 0.9460537468215585
+2024-12-03 14:20:48,732 - Accuracy score for cross validation set: 0.7440023930601256
+2024-12-03 14:20:48,733 - -----------------------
+2024-12-03 14:21:03,756 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:21:05,777 - Accuracy score for training set: 0.8711173156503964
+2024-12-03 14:21:07,532 - Accuracy score for cross validation set: 0.7401734968591086
+2024-12-03 14:21:07,532 - -----------------------
+2024-12-03 14:21:20,419 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:21:22,698 - Accuracy score for training set: 0.872114473749813
+2024-12-03 14:21:24,522 - Accuracy score for cross validation set: 0.7394555788214179
+2024-12-03 14:21:24,523 - -----------------------
+2024-12-03 14:21:37,880 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced_subsample'}
+2024-12-03 14:21:39,866 - Accuracy score for training set: 0.8582539761679214
+2024-12-03 14:21:41,569 - Accuracy score for cross validation set: 0.7392162728088543
+2024-12-03 14:21:41,569 - -----------------------
+2024-12-03 14:21:52,844 - {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 5, 'rf_classifier__min_samples_leaf': 4, 'rf_classifier__max_features': 'log2', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:21:54,944 - Accuracy score for training set: 0.8585032656927756
+2024-12-03 14:21:56,640 - Accuracy score for cross validation set: 0.7398145378402632
+2024-12-03 14:21:56,641 - -----------------------
+2024-12-03 14:21:56,642 - ----------------------------------------------------------------
+2024-12-03 14:21:56,642 - Best Model: rf_classifier
+2024-12-03 14:21:56,642 - Best Accuracy Score: 0.7550
+2024-12-03 14:21:56,643 - Best Parameters: {'rf_classifier__n_estimators': 600, 'rf_classifier__max_depth': 40, 'rf_classifier__min_samples_split': 2, 'rf_classifier__min_samples_leaf': 1, 'rf_classifier__max_features': 'sqrt', 'rf_classifier__class_weight': 'balanced'}
+2024-12-03 14:21:56,644 - ----------------------------------------------------------------
+2024-12-03 14:21:56,644 - End of Initial Model Evaluation

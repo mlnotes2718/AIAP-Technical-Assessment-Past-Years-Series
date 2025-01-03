@@ -1,0 +1,128 @@
+# initial_model_config.yaml
+
+
+#######################################################################################
+### User Guide:                                                                  ######
+#######################################################################################
+### There are 5 main configurations
+### They are CV_SIZE, SAMPLE_SIZE, MODEL_LIST, MODELS and PARAMS
+### CV_SIZE : This allow us to set the size of cross validation dataset
+### SAMPLE_SIZE : If your dataset is very large, you can reduce the training dataset.
+### MODEL_LIST : Use this setting to select which model to run, this way we can keep 
+### the settings of all other models.
+### MODELS : Use this setting to construct the pipeline for each model.
+### PARAMS : Use this setting to define which parameters to run for each model
+###
+### Please note that this is no grid search, you can set the parameters with a wide 
+### range. You can see the training score and test score of each combination.
+### Use this tool to set a large range, look at the score and narrow down the search 
+### parameters in preparation for grid search.
+#######################################################################################
+
+#############################################################################
+### Settings Parameters
+#############################################################################
+
+# Define the size of cross validation dataset, range from 0.1 to 0.9
+CV_SIZE : 0.2
+
+# Define Sample size for large dataset
+# If your dataset is very large, you can set the sample size
+# Please note that the system will extract the CV dataset for testing first
+# SAMPLE SIZE will only applied to the remaining training data after the CV Split
+# Set from 0.1 to 1.0. 1.0 means not reducing teh dataset size.
+SAMPLE_SIZE : 0.2
+
+# Define which model to run
+# The MODELS_LIST will define which model to run so there is no need to delete any model configuration
+
+#MODELS_LIST : ['logistic_regression', 'decision_tree_classifier', 'knn_classifier', 'svc', 'rf_classifier', 'gb_classifier', 'xgboost_classifier']
+#MODELS_LIST : ['decision_tree_classifier','rf_classifier', 'gb_classifier', 'xgboost_classifier']
+MODELS_LIST : ['gb_classifier']
+
+# Define models pipelines that include polynomial features and scaling.
+# For feature scaling we have StandardScaler and MinMaxScaler
+MODELS : 
+  'logistic_regression':
+    - 'poly': PolynomialFeatures
+    - 'scaler': StandardScaler
+    - 'logistic': LogisticRegression 
+  'decision_tree_classifier':
+    - 'decision_tree_classifier': DecisionTreeClassifier
+  'knn_classifier':
+    - 'poly': PolynomialFeatures
+    - 'scaler': StandardScaler
+    - 'knn_classifier': KNeighborsClassifier        
+  'svc':
+    - 'poly': PolynomialFeatures
+    - 'scaler': StandardScaler
+    - 'svc': SVC       
+  'rf_classifier': 
+    - 'rf_classifier': RandomForestClassifier
+  'gb_classifier': 
+    - 'gb_classifier': GradientBoostingClassifier
+  'xgboost_classifier': 
+    - 'xgboost_classifier': XGBClassifier
+
+
+
+# Define hyperparameters for each model, including polynomial degrees
+PARAMS : {
+    'logistic_regression': {
+        'poly__degree': [2], 
+        #'logistic__C': [0.001, 0.005, 0.008, 0.01, 0.02],
+        'logistic__C': [0.005, 0.008],
+        'logistic__penalty': ['l2'], 
+        'logistic__max_iter': [10000],
+        'logistic__solver': ['lbfgs', 'liblinear']           
+    },
+    'decision_tree_classifier': {
+        'decision_tree_classifier__criterion': ['gini', 'entropy'],
+        'decision_tree_classifier__max_depth': [3, 4, 5],
+        'decision_tree_classifier__min_samples_split': [2, 3, 5],
+        'decision_tree_classifier__min_samples_leaf': [1, 3, 4],
+        'decision_tree_classifier__max_features': [0.3, 0.4, 0.5],
+        'decision_tree_classifier__max_leaf_nodes': [40, 50, 100]
+    },
+    'knn_classifier': {
+        'poly__degree': [2],
+        'knn_classifier__n_neighbors': [5, 20],
+        'knn_classifier__weights': ['distance'],
+        'knn_classifier__metric': ['euclidean', 'manhattan', 'minkowski'],
+        'knn_classifier__p': [1]
+    },
+    'svc': {
+        'poly__degree': [2],
+        'svc__C': [0.1, 10, 100],
+        'svc__kernel': ['linear', 'rbf', 'poly'],
+        'svc__gamma': [0.001, 0.01, 0.1],
+        'svc__class_weight': ['balanced'],
+    },
+    'rf_classifier':{
+        'rf_classifier__n_estimators': [500, 600],   
+        'rf_classifier__max_depth': [30, 35, 40],     
+        'rf_classifier__min_samples_split': [2, 3, 5],          
+        'rf_classifier__min_samples_leaf': [1, 2, 4],           
+        'rf_classifier__max_features': ['sqrt', 'log2'],        
+        'rf_classifier__class_weight': ['balanced_subsample', 'balanced'],  
+    },
+    'gb_classifier':{
+        'gb_classifier__n_estimators': [800, 1000, 1200],       
+        'gb_classifier__learning_rate': [0.01, 0.05, 0.1],     
+        'gb_classifier__max_depth': [5, 10, 50],              
+        #'gb_classifier__min_samples_split': [2, 5, 10],     
+        #'gb_classifier__min_samples_leaf': [1, 2, 10],          
+        #'gb_classifier__subsample': [0.5, 1.0],               
+        #'gb_classifier__max_features': ['sqrt', 'log2'],                 
+    },
+    'xgboost_classifier': {
+        'xgboost_classifier__n_estimators': [50, 100, 200],           
+        'xgboost_classifier__learning_rate': [0.01, 0.1, 0.2],        
+        'xgboost_classifier__max_depth': [3, 5, 10],                  
+        #'xgboost_classifier__min_child_weight': [1, 3, 5],            
+        'xgboost_classifier__gamma': [0, 0.1, 0.2],                   
+        #'xgboost_classifier__subsample': [0.8, 0.9, 1.0],             
+        #'xgboost_classifier__colsample_bytree': [0.8, 0.9, 1.0],      
+        #'xgboost_classifier__scale_pos_weight': [1, 2, 3],            
+    }
+}

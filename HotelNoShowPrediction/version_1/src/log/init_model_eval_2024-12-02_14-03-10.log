@@ -1,0 +1,52 @@
+2024-12-02 14:03:10,793 - Begin Initial Model Evaluation Run
+2024-12-02 14:03:10,794 - ----------------------------------------------------------------
+2024-12-02 14:03:11,047 - Train and CV dataset formed
+2024-12-02 14:03:11,047 - Size of X_train is: 66858
+2024-12-02 14:03:11,048 - Size of y_train is: 66858
+2024-12-02 14:03:11,049 - Size of X_cv is: 16715
+2024-12-02 14:03:11,049 - Size of y_cv is: 16715
+2024-12-02 14:03:11,056 - ----------------------------------------------------------------
+2024-12-02 14:03:11,057 - Training dataset after downsize
+2024-12-02 14:03:11,057 - Size of X_train is: 6686
+2024-12-02 14:03:11,058 - Size of y_train is: 6686
+2024-12-02 14:03:11,058 -  
+2024-12-02 14:03:11,059 - Evaluating model: logistic_regression
+2024-12-02 14:03:11,060 - ----------------------------------------------------------------
+2024-12-02 14:03:13,375 - Running model with default Settings:
+2024-12-02 14:03:13,375 - ----------------------------------------------------------------
+2024-12-02 14:03:13,450 - Accuracy score for training set: 0.7345198923122943
+2024-12-02 14:03:13,631 - Accuracy score for cross validation set: 0.7201914448100508
+2024-12-02 14:03:13,632 -  
+2024-12-02 14:03:13,634 - ----------------------------------------------------------------
+2024-12-02 14:03:13,635 - Running model with various parameters:
+2024-12-02 14:03:13,636 - ----------------------------------------------------------------
+2024-12-02 14:03:18,594 - {'poly__degree': 3, 'logistic__C': 0.01, 'logistic__penalty': 'l2', 'logistic__max_iter': 10000, 'logistic__solver': 'lbfgs'}
+2024-12-02 14:03:18,905 - Accuracy score for training set: 0.7638348788513312
+2024-12-02 14:03:19,576 - Accuracy score for cross validation set: 0.7097816332635357
+2024-12-02 14:03:19,577 - -----------------------
+2024-12-02 14:03:36,478 - {'poly__degree': 3, 'logistic__C': 0.01, 'logistic__penalty': 'l2', 'logistic__max_iter': 10000, 'logistic__solver': 'liblinear'}
+2024-12-02 14:03:36,801 - Accuracy score for training set: 0.7653305414298535
+2024-12-02 14:03:37,451 - Accuracy score for cross validation set: 0.7087047562069997
+2024-12-02 14:03:37,451 - -----------------------
+2024-12-02 14:04:05,450 - {'poly__degree': 3, 'logistic__C': 1, 'logistic__penalty': 'l2', 'logistic__max_iter': 10000, 'logistic__solver': 'lbfgs'}
+2024-12-02 14:04:05,738 - Accuracy score for training set: 0.799730780735866
+2024-12-02 14:04:06,372 - Accuracy score for cross validation set: 0.684833981453784
+2024-12-02 14:04:06,373 - -----------------------
+2024-12-02 14:06:40,175 - {'poly__degree': 3, 'logistic__C': 1, 'logistic__penalty': 'l2', 'logistic__max_iter': 10000, 'logistic__solver': 'liblinear'}
+2024-12-02 14:06:40,463 - Accuracy score for training set: 0.799730780735866
+2024-12-02 14:06:41,094 - Accuracy score for cross validation set: 0.6836374513909662
+2024-12-02 14:06:41,094 - -----------------------
+2024-12-02 14:07:40,341 - {'poly__degree': 3, 'logistic__C': 10, 'logistic__penalty': 'l2', 'logistic__max_iter': 10000, 'logistic__solver': 'lbfgs'}
+2024-12-02 14:07:40,633 - Accuracy score for training set: 0.8088543224648519
+2024-12-02 14:07:41,273 - Accuracy score for cross validation set: 0.6768770565360455
+2024-12-02 14:07:41,274 - -----------------------
+2024-12-02 14:15:10,318 - {'poly__degree': 3, 'logistic__C': 10, 'logistic__penalty': 'l2', 'logistic__max_iter': 10000, 'logistic__solver': 'liblinear'}
+2024-12-02 14:15:10,611 - Accuracy score for training set: 0.8090038887227041
+2024-12-02 14:15:11,262 - Accuracy score for cross validation set: 0.6761591384983547
+2024-12-02 14:15:11,263 - -----------------------
+2024-12-02 14:15:11,264 - ----------------------------------------------------------------
+2024-12-02 14:15:11,264 - Best Model: logistic_regression
+2024-12-02 14:15:11,265 - Best Accuracy Score: 0.7098
+2024-12-02 14:15:11,265 - Best Parameters: {'poly__degree': 3, 'logistic__C': 0.01, 'logistic__penalty': 'l2', 'logistic__max_iter': 10000, 'logistic__solver': 'lbfgs'}
+2024-12-02 14:15:11,266 - ----------------------------------------------------------------
+2024-12-02 14:15:11,266 - End of Initial Model Evaluation

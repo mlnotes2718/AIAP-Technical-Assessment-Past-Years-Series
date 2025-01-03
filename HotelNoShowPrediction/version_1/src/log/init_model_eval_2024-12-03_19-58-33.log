@@ -1,0 +1,136 @@
+2024-12-03 19:58:33,437 - Begin Initial Model Evaluation Run
+2024-12-03 19:58:33,438 - ----------------------------------------------------------------
+2024-12-03 19:58:33,704 - Train and CV dataset formed
+2024-12-03 19:58:33,704 - Size of X_train is: 66858
+2024-12-03 19:58:33,705 - Size of y_train is: 66858
+2024-12-03 19:58:33,706 - Size of X_cv is: 16715
+2024-12-03 19:58:33,706 - Size of y_cv is: 16715
+2024-12-03 19:58:33,712 - ----------------------------------------------------------------
+2024-12-03 19:58:33,712 - Training dataset after downsize
+2024-12-03 19:58:33,713 - Size of X_train is: 13372
+2024-12-03 19:58:33,713 - Size of y_train is: 13372
+2024-12-03 19:58:33,714 -  
+2024-12-03 19:58:33,714 - Evaluating model: gb_classifier
+2024-12-03 19:58:33,715 - ----------------------------------------------------------------
+2024-12-03 19:58:35,581 - Running model with default Settings:
+2024-12-03 19:58:35,582 - ----------------------------------------------------------------
+2024-12-03 19:58:35,611 - Accuracy score for training set: 0.7409512413999402
+2024-12-03 19:58:35,651 - Accuracy score for cross validation set: 0.7381992222554592
+2024-12-03 19:58:35,651 -  
+2024-12-03 19:58:35,651 - ----------------------------------------------------------------
+2024-12-03 19:58:35,652 - Running model with various parameters:
+2024-12-03 19:58:35,653 - ----------------------------------------------------------------
+2024-12-03 19:58:58,885 - {'gb_classifier__n_estimators': 800, 'gb_classifier__learning_rate': 0.01, 'gb_classifier__max_depth': 5}
+2024-12-03 19:58:59,144 - Accuracy score for training set: 0.769593179778642
+2024-12-03 19:58:59,469 - Accuracy score for cross validation set: 0.7413700269219264
+2024-12-03 19:58:59,469 - -----------------------
+2024-12-03 19:59:50,964 - {'gb_classifier__n_estimators': 800, 'gb_classifier__learning_rate': 0.01, 'gb_classifier__max_depth': 10}
+2024-12-03 19:59:51,541 - Accuracy score for training set: 0.9560275201914448
+2024-12-03 19:59:52,243 - Accuracy score for cross validation set: 0.7418486389470536
+2024-12-03 19:59:52,244 - -----------------------
+2024-12-03 20:01:56,943 - {'gb_classifier__n_estimators': 800, 'gb_classifier__learning_rate': 0.01, 'gb_classifier__max_depth': 50}
+2024-12-03 20:01:58,271 - Accuracy score for training set: 0.9999252168710739
+2024-12-03 20:01:59,897 - Accuracy score for cross validation set: 0.6708345797188154
+2024-12-03 20:01:59,898 - -----------------------
+2024-12-03 20:02:21,665 - {'gb_classifier__n_estimators': 800, 'gb_classifier__learning_rate': 0.05, 'gb_classifier__max_depth': 5}
+2024-12-03 20:02:21,859 - Accuracy score for training set: 0.8566407418486389
+2024-12-03 20:02:22,110 - Accuracy score for cross validation set: 0.7373018247083458
+2024-12-03 20:02:22,110 - -----------------------
+2024-12-03 20:03:10,197 - {'gb_classifier__n_estimators': 800, 'gb_classifier__learning_rate': 0.05, 'gb_classifier__max_depth': 10}
+2024-12-03 20:03:10,665 - Accuracy score for training set: 0.9999252168710739
+2024-12-03 20:03:11,245 - Accuracy score for cross validation set: 0.7413102004187855
+2024-12-03 20:03:11,246 - -----------------------
+2024-12-03 20:04:27,604 - {'gb_classifier__n_estimators': 800, 'gb_classifier__learning_rate': 0.05, 'gb_classifier__max_depth': 50}
+2024-12-03 20:04:28,403 - Accuracy score for training set: 0.9999252168710739
+2024-12-03 20:04:29,386 - Accuracy score for cross validation set: 0.6749027819323961
+2024-12-03 20:04:29,387 - -----------------------
+2024-12-03 20:04:50,943 - {'gb_classifier__n_estimators': 800, 'gb_classifier__learning_rate': 0.1, 'gb_classifier__max_depth': 5}
+2024-12-03 20:04:51,134 - Accuracy score for training set: 0.9244690397846246
+2024-12-03 20:04:51,364 - Accuracy score for cross validation set: 0.7309602153754113
+2024-12-03 20:04:51,365 - -----------------------
+2024-12-03 20:05:39,257 - {'gb_classifier__n_estimators': 800, 'gb_classifier__learning_rate': 0.1, 'gb_classifier__max_depth': 10}
+2024-12-03 20:05:39,726 - Accuracy score for training set: 0.9999252168710739
+2024-12-03 20:05:40,335 - Accuracy score for cross validation set: 0.7379000897397547
+2024-12-03 20:05:40,336 - -----------------------
+2024-12-03 20:06:44,126 - {'gb_classifier__n_estimators': 800, 'gb_classifier__learning_rate': 0.1, 'gb_classifier__max_depth': 50}
+2024-12-03 20:06:44,801 - Accuracy score for training set: 0.9999252168710739
+2024-12-03 20:06:45,614 - Accuracy score for cross validation set: 0.6752617409512414
+2024-12-03 20:06:45,614 - -----------------------
+2024-12-03 20:07:12,848 - {'gb_classifier__n_estimators': 1000, 'gb_classifier__learning_rate': 0.01, 'gb_classifier__max_depth': 5}
+2024-12-03 20:07:13,137 - Accuracy score for training set: 0.7774454083158839
+2024-12-03 20:07:13,484 - Accuracy score for cross validation set: 0.742147771462758
+2024-12-03 20:07:13,484 - -----------------------
+2024-12-03 20:08:13,310 - {'gb_classifier__n_estimators': 1000, 'gb_classifier__learning_rate': 0.01, 'gb_classifier__max_depth': 10}
+2024-12-03 20:08:13,961 - Accuracy score for training set: 0.9702363146874066
+2024-12-03 20:08:14,757 - Accuracy score for cross validation set: 0.7414896799282082
+2024-12-03 20:08:14,758 - -----------------------
+2024-12-03 20:11:08,061 - {'gb_classifier__n_estimators': 1000, 'gb_classifier__learning_rate': 0.01, 'gb_classifier__max_depth': 50}
+2024-12-03 20:11:09,776 - Accuracy score for training set: 0.9999252168710739
+2024-12-03 20:11:11,912 - Accuracy score for cross validation set: 0.6714926712533652
+2024-12-03 20:11:11,913 - -----------------------
+2024-12-03 20:11:38,807 - {'gb_classifier__n_estimators': 1000, 'gb_classifier__learning_rate': 0.05, 'gb_classifier__max_depth': 5}
+2024-12-03 20:11:39,042 - Accuracy score for training set: 0.8755608734669459
+2024-12-03 20:11:39,337 - Accuracy score for cross validation set: 0.7347891115764283
+2024-12-03 20:11:39,338 - -----------------------
+2024-12-03 20:12:39,164 - {'gb_classifier__n_estimators': 1000, 'gb_classifier__learning_rate': 0.05, 'gb_classifier__max_depth': 10}
+2024-12-03 20:12:39,728 - Accuracy score for training set: 0.9999252168710739
+2024-12-03 20:12:40,448 - Accuracy score for cross validation set: 0.7367035596769369
+2024-12-03 20:12:40,448 - -----------------------
+2024-12-03 20:14:10,404 - {'gb_classifier__n_estimators': 1000, 'gb_classifier__learning_rate': 0.05, 'gb_classifier__max_depth': 50}
+2024-12-03 20:14:11,365 - Accuracy score for training set: 0.9999252168710739
+2024-12-03 20:14:12,639 - Accuracy score for cross validation set: 0.6752019144481005
+2024-12-03 20:14:12,639 - -----------------------
+2024-12-03 20:14:39,882 - {'gb_classifier__n_estimators': 1000, 'gb_classifier__learning_rate': 0.1, 'gb_classifier__max_depth': 5}
+2024-12-03 20:14:40,136 - Accuracy score for training set: 0.9475022434938678
+2024-12-03 20:14:40,428 - Accuracy score for cross validation set: 0.7255160035895902
+2024-12-03 20:14:40,429 - -----------------------
+2024-12-03 20:15:40,551 - {'gb_classifier__n_estimators': 1000, 'gb_classifier__learning_rate': 0.1, 'gb_classifier__max_depth': 10}
+2024-12-03 20:15:41,115 - Accuracy score for training set: 0.9999252168710739
+2024-12-03 20:15:41,820 - Accuracy score for cross validation set: 0.739395752318277
+2024-12-03 20:15:41,821 - -----------------------
+2024-12-03 20:17:07,359 - {'gb_classifier__n_estimators': 1000, 'gb_classifier__learning_rate': 0.1, 'gb_classifier__max_depth': 50}
+2024-12-03 20:17:08,266 - Accuracy score for training set: 0.9999252168710739
+2024-12-03 20:17:09,372 - Accuracy score for cross validation set: 0.6758001794795094
+2024-12-03 20:17:09,372 - -----------------------
+2024-12-03 20:17:46,160 - {'gb_classifier__n_estimators': 1200, 'gb_classifier__learning_rate': 0.01, 'gb_classifier__max_depth': 5}
+2024-12-03 20:17:46,557 - Accuracy score for training set: 0.785970685013461
+2024-12-03 20:17:47,025 - Accuracy score for cross validation set: 0.7416093329344899
+2024-12-03 20:17:47,025 - -----------------------
+2024-12-03 20:19:10,119 - {'gb_classifier__n_estimators': 1200, 'gb_classifier__learning_rate': 0.01, 'gb_classifier__max_depth': 10}
+2024-12-03 20:19:10,979 - Accuracy score for training set: 0.9890068800478612
+2024-12-03 20:19:12,058 - Accuracy score for cross validation set: 0.741011067903081
+2024-12-03 20:19:12,058 - -----------------------
+2024-12-03 20:22:31,827 - {'gb_classifier__n_estimators': 1200, 'gb_classifier__learning_rate': 0.01, 'gb_classifier__max_depth': 50}
+2024-12-03 20:22:33,763 - Accuracy score for training set: 0.9999252168710739
+2024-12-03 20:22:36,150 - Accuracy score for cross validation set: 0.6728088543224648
+2024-12-03 20:22:36,151 - -----------------------
+2024-12-03 20:23:08,425 - {'gb_classifier__n_estimators': 1200, 'gb_classifier__learning_rate': 0.05, 'gb_classifier__max_depth': 5}
+2024-12-03 20:23:08,701 - Accuracy score for training set: 0.8931349087645827
+2024-12-03 20:23:09,054 - Accuracy score for cross validation set: 0.7334131020041879
+2024-12-03 20:23:09,055 - -----------------------
+2024-12-03 20:24:21,100 - {'gb_classifier__n_estimators': 1200, 'gb_classifier__learning_rate': 0.05, 'gb_classifier__max_depth': 10}
+2024-12-03 20:24:21,774 - Accuracy score for training set: 0.9999252168710739
+2024-12-03 20:24:22,612 - Accuracy score for cross validation set: 0.7387974872868681
+2024-12-03 20:24:22,612 - -----------------------
+2024-12-03 20:26:04,503 - {'gb_classifier__n_estimators': 1200, 'gb_classifier__learning_rate': 0.05, 'gb_classifier__max_depth': 50}
+2024-12-03 20:26:05,645 - Accuracy score for training set: 0.9999252168710739
+2024-12-03 20:26:06,981 - Accuracy score for cross validation set: 0.6769368830391863
+2024-12-03 20:26:06,981 - -----------------------
+2024-12-03 20:26:39,906 - {'gb_classifier__n_estimators': 1200, 'gb_classifier__learning_rate': 0.1, 'gb_classifier__max_depth': 5}
+2024-12-03 20:26:40,203 - Accuracy score for training set: 0.9637301824708345
+2024-12-03 20:26:40,550 - Accuracy score for cross validation set: 0.7241399940173496
+2024-12-03 20:26:40,551 - -----------------------
+2024-12-03 20:27:52,914 - {'gb_classifier__n_estimators': 1200, 'gb_classifier__learning_rate': 0.1, 'gb_classifier__max_depth': 10}
+2024-12-03 20:27:53,620 - Accuracy score for training set: 0.9999252168710739
+2024-12-03 20:27:54,476 - Accuracy score for cross validation set: 0.7417289859407717
+2024-12-03 20:27:54,476 - -----------------------
+2024-12-03 20:29:24,169 - {'gb_classifier__n_estimators': 1200, 'gb_classifier__learning_rate': 0.1, 'gb_classifier__max_depth': 50}
+2024-12-03 20:29:25,081 - Accuracy score for training set: 0.9999252168710739
+2024-12-03 20:29:26,248 - Accuracy score for cross validation set: 0.6761591384983547
+2024-12-03 20:29:26,248 - -----------------------
+2024-12-03 20:29:26,249 - ----------------------------------------------------------------
+2024-12-03 20:29:26,249 - Best Model: gb_classifier
+2024-12-03 20:29:26,250 - Best Accuracy Score: 0.7421
+2024-12-03 20:29:26,251 - Best Parameters: {'gb_classifier__n_estimators': 1000, 'gb_classifier__learning_rate': 0.01, 'gb_classifier__max_depth': 5}
+2024-12-03 20:29:26,251 - ----------------------------------------------------------------
+2024-12-03 20:29:26,251 - End of Initial Model Evaluation

@@ -1,0 +1,40 @@
+2024-12-02 12:59:46,488 - Begin Initial Model Evaluation Run
+2024-12-02 12:59:46,488 - ----------------------------------------------------------------
+2024-12-02 12:59:46,755 - Train and CV dataset formed
+2024-12-02 12:59:46,756 - Size of X_train is: 66858
+2024-12-02 12:59:46,756 - Size of y_train is: 66858
+2024-12-02 12:59:46,757 - Size of X_cv is: 16715
+2024-12-02 12:59:46,758 - Size of y_cv is: 16715
+2024-12-02 12:59:46,764 - ----------------------------------------------------------------
+2024-12-02 12:59:46,765 - Training dataset after downsize
+2024-12-02 12:59:46,765 - Size of X_train is: 20057
+2024-12-02 12:59:46,766 - Size of y_train is: 20057
+2024-12-02 12:59:46,767 -  
+2024-12-02 12:59:46,767 - Evaluating model: logistic_regression
+2024-12-02 12:59:46,768 - ----------------------------------------------------------------
+2024-12-02 12:59:52,080 - Running model with default Settings:
+2024-12-02 12:59:52,081 - ----------------------------------------------------------------
+2024-12-02 12:59:52,248 - Accuracy score for training set: 0.7330109188811886
+2024-12-02 12:59:52,390 - Accuracy score for cross validation set: 0.7294047262937481
+2024-12-02 12:59:52,392 -  
+2024-12-02 12:59:52,393 - ----------------------------------------------------------------
+2024-12-02 12:59:52,394 - Running model with various parameters:
+2024-12-02 12:59:52,394 - ----------------------------------------------------------------
+2024-12-02 12:59:52,509 - {'poly__degree': 1, 'logistic__C': 0.01, 'logistic__penalty': 'l2', 'logistic__max_iter': 10000, 'logistic__solver': 'lbfgs'}
+2024-12-02 12:59:52,531 - Accuracy score for training set: 0.7227900483621679
+2024-12-02 12:59:52,551 - Accuracy score for cross validation set: 0.7236015554890817
+2024-12-02 12:59:52,552 - -----------------------
+2024-12-02 12:59:52,749 - {'poly__degree': 1, 'logistic__C': 0.01, 'logistic__penalty': 'l2', 'logistic__max_iter': 10000, 'logistic__solver': 'liblinear'}
+2024-12-02 12:59:52,765 - Accuracy score for training set: 0.7230891957919928
+2024-12-02 12:59:52,780 - Accuracy score for cross validation set: 0.7235417289859408
+2024-12-02 12:59:52,781 - -----------------------
+2024-12-02 12:59:53,025 - {'poly__degree': 1, 'logistic__C': 0.01, 'logistic__penalty': 'l2', 'logistic__max_iter': 10000, 'logistic__solver': 'saga'}
+2024-12-02 12:59:53,042 - Accuracy score for training set: 0.7227900483621679
+2024-12-02 12:59:53,057 - Accuracy score for cross validation set: 0.7236015554890817
+2024-12-02 12:59:53,058 - -----------------------
+2024-12-02 12:59:53,058 - ----------------------------------------------------------------
+2024-12-02 12:59:53,059 - Best Model: logistic_regression
+2024-12-02 12:59:53,060 - Best Accuracy Score: 0.7236
+2024-12-02 12:59:53,060 - Best Parameters: {'poly__degree': 1, 'logistic__C': 0.01, 'logistic__penalty': 'l2', 'logistic__max_iter': 10000, 'logistic__solver': 'lbfgs'}
+2024-12-02 12:59:53,061 - ----------------------------------------------------------------
+2024-12-02 12:59:53,062 - End of Initial Model Evaluation

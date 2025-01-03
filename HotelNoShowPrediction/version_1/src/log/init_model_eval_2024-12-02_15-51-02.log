@@ -1,0 +1,660 @@
+2024-12-02 15:51:02,735 - Begin Initial Model Evaluation Run
+2024-12-02 15:51:02,736 - ----------------------------------------------------------------
+2024-12-02 15:51:02,990 - Train and CV dataset formed
+2024-12-02 15:51:02,990 - Size of X_train is: 66858
+2024-12-02 15:51:02,991 - Size of y_train is: 66858
+2024-12-02 15:51:02,991 - Size of X_cv is: 16715
+2024-12-02 15:51:02,992 - Size of y_cv is: 16715
+2024-12-02 15:51:02,997 - ----------------------------------------------------------------
+2024-12-02 15:51:02,998 - Training dataset after downsize
+2024-12-02 15:51:02,998 - Size of X_train is: 20057
+2024-12-02 15:51:02,999 - Size of y_train is: 20057
+2024-12-02 15:51:02,999 -  
+2024-12-02 15:51:03,000 - Evaluating model: logistic_regression
+2024-12-02 15:51:03,001 - ----------------------------------------------------------------
+2024-12-02 15:51:09,441 - Running model with default Settings:
+2024-12-02 15:51:09,444 - ----------------------------------------------------------------
+2024-12-02 15:51:09,601 - Accuracy score for training set: 0.7301191603928803
+2024-12-02 15:51:09,758 - Accuracy score for cross validation set: 0.7247980855518995
+2024-12-02 15:51:09,759 -  
+2024-12-02 15:51:09,759 - ----------------------------------------------------------------
+2024-12-02 15:51:09,759 - Running model with various parameters:
+2024-12-02 15:51:09,760 - ----------------------------------------------------------------
+2024-12-02 15:51:10,545 - {'poly__degree': 2, 'logistic__C': 0.001, 'logistic__penalty': 'l2', 'logistic__max_iter': 10000, 'logistic__solver': 'lbfgs'}
+2024-12-02 15:51:10,696 - Accuracy score for training set: 0.7243855013212345
+2024-12-02 15:51:10,823 - Accuracy score for cross validation set: 0.7231827699670954
+2024-12-02 15:51:10,824 - -----------------------
+2024-12-02 15:51:12,809 - {'poly__degree': 2, 'logistic__C': 0.001, 'logistic__penalty': 'l2', 'logistic__max_iter': 10000, 'logistic__solver': 'liblinear'}
+2024-12-02 15:51:12,953 - Accuracy score for training set: 0.722441043027372
+2024-12-02 15:51:13,102 - Accuracy score for cross validation set: 0.7240203410110679
+2024-12-02 15:51:13,103 - -----------------------
+2024-12-02 15:51:14,641 - {'poly__degree': 2, 'logistic__C': 0.005, 'logistic__penalty': 'l2', 'logistic__max_iter': 10000, 'logistic__solver': 'lbfgs'}
+2024-12-02 15:51:14,811 - Accuracy score for training set: 0.7274268335244553
+2024-12-02 15:51:15,004 - Accuracy score for cross validation set: 0.724498953036195
+2024-12-02 15:51:15,004 - -----------------------
+2024-12-02 15:51:18,103 - {'poly__degree': 2, 'logistic__C': 0.005, 'logistic__penalty': 'l2', 'logistic__max_iter': 10000, 'logistic__solver': 'liblinear'}
+2024-12-02 15:51:18,255 - Accuracy score for training set: 0.7273271177145136
+2024-12-02 15:51:18,399 - Accuracy score for cross validation set: 0.725037391564463
+2024-12-02 15:51:18,399 - -----------------------
+2024-12-02 15:51:19,534 - {'poly__degree': 2, 'logistic__C': 0.008, 'logistic__penalty': 'l2', 'logistic__max_iter': 10000, 'logistic__solver': 'lbfgs'}
+2024-12-02 15:51:19,689 - Accuracy score for training set: 0.7285735653387845
+2024-12-02 15:51:19,824 - Accuracy score for cross validation set: 0.7252766975770266
+2024-12-02 15:51:19,826 - -----------------------
+2024-12-02 15:51:22,975 - {'poly__degree': 2, 'logistic__C': 0.008, 'logistic__penalty': 'l2', 'logistic__max_iter': 10000, 'logistic__solver': 'liblinear'}
+2024-12-02 15:51:23,127 - Accuracy score for training set: 0.7282245600039886
+2024-12-02 15:51:23,288 - Accuracy score for cross validation set: 0.7258151361052947
+2024-12-02 15:51:23,289 - -----------------------
+2024-12-02 15:51:24,709 - {'poly__degree': 2, 'logistic__C': 0.01, 'logistic__penalty': 'l2', 'logistic__max_iter': 10000, 'logistic__solver': 'lbfgs'}
+2024-12-02 15:51:24,860 - Accuracy score for training set: 0.7291718601984345
+2024-12-02 15:51:25,014 - Accuracy score for cross validation set: 0.7257553096021537
+2024-12-02 15:51:25,017 - -----------------------
+2024-12-02 15:51:28,333 - {'poly__degree': 2, 'logistic__C': 0.01, 'logistic__penalty': 'l2', 'logistic__max_iter': 10000, 'logistic__solver': 'liblinear'}
+2024-12-02 15:51:28,491 - Accuracy score for training set: 0.7290721443884928
+2024-12-02 15:51:28,623 - Accuracy score for cross validation set: 0.7262937481304218
+2024-12-02 15:51:28,624 - -----------------------
+2024-12-02 15:51:30,247 - {'poly__degree': 2, 'logistic__C': 0.02, 'logistic__penalty': 'l2', 'logistic__max_iter': 10000, 'logistic__solver': 'lbfgs'}
+2024-12-02 15:51:30,440 - Accuracy score for training set: 0.7292217181034053
+2024-12-02 15:51:30,592 - Accuracy score for cross validation set: 0.7252168710738858
+2024-12-02 15:51:30,593 - -----------------------
+2024-12-02 15:51:35,348 - {'poly__degree': 2, 'logistic__C': 0.02, 'logistic__penalty': 'l2', 'logistic__max_iter': 10000, 'logistic__solver': 'liblinear'}
+2024-12-02 15:51:35,495 - Accuracy score for training set: 0.7291718601984345
+2024-12-02 15:51:35,638 - Accuracy score for cross validation set: 0.7258749626084355
+2024-12-02 15:51:35,639 - -----------------------
+2024-12-02 15:51:35,640 - ----------------------------------------------------------------
+2024-12-02 15:51:35,641 - Best Model: logistic_regression
+2024-12-02 15:51:35,642 - Best Accuracy Score: 0.7263
+2024-12-02 15:51:35,642 - Best Parameters: {'poly__degree': 2, 'logistic__C': 0.01, 'logistic__penalty': 'l2', 'logistic__max_iter': 10000, 'logistic__solver': 'liblinear'}
+2024-12-02 15:51:35,643 - ----------------------------------------------------------------
+2024-12-02 15:51:35,643 -  
+2024-12-02 15:51:35,644 - Evaluating model: decision_tree
+2024-12-02 15:51:35,645 - ----------------------------------------------------------------
+2024-12-02 15:51:35,828 - Running model with default Settings:
+2024-12-02 15:51:35,829 - ----------------------------------------------------------------
+2024-12-02 15:51:35,839 - Accuracy score for training set: 0.9998504262850875
+2024-12-02 15:51:35,847 - Accuracy score for cross validation set: 0.6760993119952139
+2024-12-02 15:51:35,850 -  
+2024-12-02 15:51:35,850 - ----------------------------------------------------------------
+2024-12-02 15:51:35,851 - Running model with various parameters:
+2024-12-02 15:51:35,851 - ----------------------------------------------------------------
+2024-12-02 15:51:35,852 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:35,853 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,854 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:35,855 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,856 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:35,857 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,858 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:35,859 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,860 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:35,861 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,862 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:35,862 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,864 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:35,864 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,866 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:35,866 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,867 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:35,868 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,869 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:35,869 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,870 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:35,871 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,872 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:35,872 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,873 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:35,874 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,875 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:35,875 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,877 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:35,877 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,878 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:35,878 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,879 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:35,879 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,880 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:35,880 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,881 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:35,882 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,882 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:35,883 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,883 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:35,884 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,884 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:35,885 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,886 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:35,886 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,887 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:35,887 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,888 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:35,888 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,889 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:35,890 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,890 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:35,891 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,893 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:35,893 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,894 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:35,895 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,896 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:35,896 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,897 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:35,897 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,898 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:35,899 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,899 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:35,900 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,901 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:35,901 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,902 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:35,902 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,903 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:35,904 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:35,905 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:35,905 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:35,906 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:35,906 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:35,907 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:35,907 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:35,919 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:35,925 - Accuracy score for training set: 0.6263150022436057
+2024-12-02 15:51:35,933 - Accuracy score for cross validation set: 0.6272210589291056
+2024-12-02 15:51:35,934 - -----------------------
+2024-12-02 15:51:35,947 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:35,954 - Accuracy score for training set: 0.6263150022436057
+2024-12-02 15:51:35,960 - Accuracy score for cross validation set: 0.6272210589291056
+2024-12-02 15:51:35,961 - -----------------------
+2024-12-02 15:51:35,975 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:35,983 - Accuracy score for training set: 0.6263150022436057
+2024-12-02 15:51:35,989 - Accuracy score for cross validation set: 0.6272210589291056
+2024-12-02 15:51:35,989 - -----------------------
+2024-12-02 15:51:35,990 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:35,991 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:35,992 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:35,992 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:35,993 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:35,994 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,008 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:36,018 - Accuracy score for training set: 0.6263150022436057
+2024-12-02 15:51:36,024 - Accuracy score for cross validation set: 0.6272210589291056
+2024-12-02 15:51:36,025 - -----------------------
+2024-12-02 15:51:36,040 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:36,046 - Accuracy score for training set: 0.6263150022436057
+2024-12-02 15:51:36,054 - Accuracy score for cross validation set: 0.6272210589291056
+2024-12-02 15:51:36,054 - -----------------------
+2024-12-02 15:51:36,068 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:36,076 - Accuracy score for training set: 0.6919778630901929
+2024-12-02 15:51:36,082 - Accuracy score for cross validation set: 0.6877654801076877
+2024-12-02 15:51:36,083 - -----------------------
+2024-12-02 15:51:36,085 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:36,086 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,087 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:36,087 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,088 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:36,089 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,105 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:36,111 - Accuracy score for training set: 0.6263150022436057
+2024-12-02 15:51:36,117 - Accuracy score for cross validation set: 0.6272210589291056
+2024-12-02 15:51:36,118 - -----------------------
+2024-12-02 15:51:36,135 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:36,142 - Accuracy score for training set: 0.7009522859849429
+2024-12-02 15:51:36,149 - Accuracy score for cross validation set: 0.7029015854023333
+2024-12-02 15:51:36,150 - -----------------------
+2024-12-02 15:51:36,166 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:36,173 - Accuracy score for training set: 0.6263150022436057
+2024-12-02 15:51:36,179 - Accuracy score for cross validation set: 0.6272210589291056
+2024-12-02 15:51:36,180 - -----------------------
+2024-12-02 15:51:36,181 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:36,182 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,183 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:36,183 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,184 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:36,185 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,197 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:36,202 - Accuracy score for training set: 0.6263150022436057
+2024-12-02 15:51:36,211 - Accuracy score for cross validation set: 0.6272210589291056
+2024-12-02 15:51:36,211 - -----------------------
+2024-12-02 15:51:36,226 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:36,233 - Accuracy score for training set: 0.6263150022436057
+2024-12-02 15:51:36,239 - Accuracy score for cross validation set: 0.6272210589291056
+2024-12-02 15:51:36,240 - -----------------------
+2024-12-02 15:51:36,257 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:36,263 - Accuracy score for training set: 0.7009522859849429
+2024-12-02 15:51:36,270 - Accuracy score for cross validation set: 0.7029015854023333
+2024-12-02 15:51:36,271 - -----------------------
+2024-12-02 15:51:36,272 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:36,272 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,273 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:36,274 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,274 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:36,275 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,291 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:36,297 - Accuracy score for training set: 0.7207957321633345
+2024-12-02 15:51:36,304 - Accuracy score for cross validation set: 0.7216871073885731
+2024-12-02 15:51:36,305 - -----------------------
+2024-12-02 15:51:36,323 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:36,330 - Accuracy score for training set: 0.6263150022436057
+2024-12-02 15:51:36,336 - Accuracy score for cross validation set: 0.6272210589291056
+2024-12-02 15:51:36,336 - -----------------------
+2024-12-02 15:51:36,348 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:36,357 - Accuracy score for training set: 0.6263150022436057
+2024-12-02 15:51:36,363 - Accuracy score for cross validation set: 0.6272210589291056
+2024-12-02 15:51:36,364 - -----------------------
+2024-12-02 15:51:36,365 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:36,366 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,366 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:36,367 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,367 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:36,368 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,384 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:36,390 - Accuracy score for training set: 0.6263150022436057
+2024-12-02 15:51:36,398 - Accuracy score for cross validation set: 0.6272210589291056
+2024-12-02 15:51:36,398 - -----------------------
+2024-12-02 15:51:36,411 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:36,417 - Accuracy score for training set: 0.6263150022436057
+2024-12-02 15:51:36,424 - Accuracy score for cross validation set: 0.6272210589291056
+2024-12-02 15:51:36,424 - -----------------------
+2024-12-02 15:51:36,439 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:36,445 - Accuracy score for training set: 0.702448023134068
+2024-12-02 15:51:36,453 - Accuracy score for cross validation set: 0.7009273107986839
+2024-12-02 15:51:36,453 - -----------------------
+2024-12-02 15:51:36,454 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:36,455 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,456 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:36,456 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,457 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:36,458 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,477 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:36,484 - Accuracy score for training set: 0.7121703146033803
+2024-12-02 15:51:36,491 - Accuracy score for cross validation set: 0.7115764283577625
+2024-12-02 15:51:36,491 - -----------------------
+2024-12-02 15:51:36,508 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:36,515 - Accuracy score for training set: 0.643864984793339
+2024-12-02 15:51:36,523 - Accuracy score for cross validation set: 0.6485192940472629
+2024-12-02 15:51:36,524 - -----------------------
+2024-12-02 15:51:36,542 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:36,548 - Accuracy score for training set: 0.638181183626664
+2024-12-02 15:51:36,556 - Accuracy score for cross validation set: 0.6375112174693389
+2024-12-02 15:51:36,557 - -----------------------
+2024-12-02 15:51:36,558 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:36,558 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,559 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:36,560 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,561 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:36,561 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,578 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:36,585 - Accuracy score for training set: 0.7084309717305679
+2024-12-02 15:51:36,592 - Accuracy score for cross validation set: 0.7094226742446904
+2024-12-02 15:51:36,592 - -----------------------
+2024-12-02 15:51:36,609 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:36,617 - Accuracy score for training set: 0.7253328015156804
+2024-12-02 15:51:36,624 - Accuracy score for cross validation set: 0.7227639844451091
+2024-12-02 15:51:36,624 - -----------------------
+2024-12-02 15:51:36,643 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:36,651 - Accuracy score for training set: 0.7157600837612803
+2024-12-02 15:51:36,657 - Accuracy score for cross validation set: 0.7116362548609034
+2024-12-02 15:51:36,658 - -----------------------
+2024-12-02 15:51:36,659 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:36,659 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,660 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:36,661 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,661 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:36,662 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,678 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:36,686 - Accuracy score for training set: 0.6264147180535474
+2024-12-02 15:51:36,692 - Accuracy score for cross validation set: 0.6271014059228238
+2024-12-02 15:51:36,692 - -----------------------
+2024-12-02 15:51:36,710 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:36,717 - Accuracy score for training set: 0.6377823203868973
+2024-12-02 15:51:36,724 - Accuracy score for cross validation set: 0.6376308704756207
+2024-12-02 15:51:36,725 - -----------------------
+2024-12-02 15:51:36,746 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:36,752 - Accuracy score for training set: 0.7101261404995762
+2024-12-02 15:51:36,759 - Accuracy score for cross validation set: 0.7088842357164223
+2024-12-02 15:51:36,760 - -----------------------
+2024-12-02 15:51:36,761 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:36,762 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,763 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:36,763 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,764 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:36,765 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,781 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:36,787 - Accuracy score for training set: 0.6274617340579349
+2024-12-02 15:51:36,796 - Accuracy score for cross validation set: 0.6268620999102602
+2024-12-02 15:51:36,796 - -----------------------
+2024-12-02 15:51:36,816 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:36,823 - Accuracy score for training set: 0.7266789649498928
+2024-12-02 15:51:36,829 - Accuracy score for cross validation set: 0.7238408615016453
+2024-12-02 15:51:36,830 - -----------------------
+2024-12-02 15:51:36,852 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:36,858 - Accuracy score for training set: 0.6795632447524556
+2024-12-02 15:51:36,864 - Accuracy score for cross validation set: 0.6768172300329046
+2024-12-02 15:51:36,865 - -----------------------
+2024-12-02 15:51:36,866 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:36,867 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,867 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:36,868 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,871 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:36,872 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,892 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:36,900 - Accuracy score for training set: 0.7104252879294012
+2024-12-02 15:51:36,908 - Accuracy score for cross validation set: 0.7067304816033503
+2024-12-02 15:51:36,909 - -----------------------
+2024-12-02 15:51:36,926 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:36,933 - Accuracy score for training set: 0.7049409183826095
+2024-12-02 15:51:36,939 - Accuracy score for cross validation set: 0.7076278791504637
+2024-12-02 15:51:36,940 - -----------------------
+2024-12-02 15:51:36,957 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:36,964 - Accuracy score for training set: 0.7253328015156804
+2024-12-02 15:51:36,970 - Accuracy score for cross validation set: 0.7247980855518995
+2024-12-02 15:51:36,971 - -----------------------
+2024-12-02 15:51:36,972 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:36,973 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,974 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:36,974 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,975 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:36,976 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:36,993 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:37,002 - Accuracy score for training set: 0.6607668145784514
+2024-12-02 15:51:37,011 - Accuracy score for cross validation set: 0.6591684116063417
+2024-12-02 15:51:37,011 - -----------------------
+2024-12-02 15:51:37,032 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:37,041 - Accuracy score for training set: 0.7172059630054345
+2024-12-02 15:51:37,047 - Accuracy score for cross validation set: 0.7137900089739755
+2024-12-02 15:51:37,047 - -----------------------
+2024-12-02 15:51:37,065 - {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:37,074 - Accuracy score for training set: 0.7207458742583637
+2024-12-02 15:51:37,080 - Accuracy score for cross validation set: 0.7166018546215974
+2024-12-02 15:51:37,081 - -----------------------
+2024-12-02 15:51:37,082 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:37,083 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,084 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:37,084 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,085 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:37,085 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,086 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:37,087 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,088 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:37,088 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,089 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:37,090 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,091 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:37,091 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,092 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:37,093 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,093 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:37,094 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,095 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:37,096 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,096 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:37,097 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,098 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:37,098 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,099 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:37,099 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,100 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:37,100 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,101 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:37,102 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,102 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:37,103 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,103 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:37,104 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,104 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:37,105 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,105 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:37,106 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,106 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:37,107 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,108 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:37,108 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,109 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:37,109 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,109 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:37,110 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,111 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:37,112 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,114 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:37,115 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,116 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:37,116 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,117 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:37,117 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,118 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:37,119 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,120 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:37,120 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,121 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:37,121 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,122 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:37,122 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,123 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:37,124 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,125 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:37,125 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,126 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:37,126 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,127 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:37,128 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,128 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 'None', 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:37,129 - Error: The 'max_depth' parameter of DecisionTreeClassifier must be an int in the range [1, inf) or None. Got 'None' instead.
+2024-12-02 15:51:37,130 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:37,130 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,131 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:37,131 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,132 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:37,133 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,144 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:37,151 - Accuracy score for training set: 0.7048910604776387
+2024-12-02 15:51:37,157 - Accuracy score for cross validation set: 0.7078073586598863
+2024-12-02 15:51:37,157 - -----------------------
+2024-12-02 15:51:37,172 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:37,179 - Accuracy score for training set: 0.6263150022436057
+2024-12-02 15:51:37,186 - Accuracy score for cross validation set: 0.6272210589291056
+2024-12-02 15:51:37,186 - -----------------------
+2024-12-02 15:51:37,207 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:37,214 - Accuracy score for training set: 0.6264147180535474
+2024-12-02 15:51:37,220 - Accuracy score for cross validation set: 0.6268620999102602
+2024-12-02 15:51:37,221 - -----------------------
+2024-12-02 15:51:37,222 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:37,222 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,223 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:37,224 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,224 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:37,226 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,239 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:37,246 - Accuracy score for training set: 0.6263150022436057
+2024-12-02 15:51:37,253 - Accuracy score for cross validation set: 0.6272210589291056
+2024-12-02 15:51:37,254 - -----------------------
+2024-12-02 15:51:37,270 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:37,277 - Accuracy score for training set: 0.7082813980156554
+2024-12-02 15:51:37,284 - Accuracy score for cross validation set: 0.7072090936284774
+2024-12-02 15:51:37,284 - -----------------------
+2024-12-02 15:51:37,297 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:37,304 - Accuracy score for training set: 0.7139153412773596
+2024-12-02 15:51:37,312 - Accuracy score for cross validation set: 0.7133113969488484
+2024-12-02 15:51:37,312 - -----------------------
+2024-12-02 15:51:37,313 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:37,314 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,314 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:37,315 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,316 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:37,317 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,330 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:37,336 - Accuracy score for training set: 0.6263150022436057
+2024-12-02 15:51:37,342 - Accuracy score for cross validation set: 0.6272210589291056
+2024-12-02 15:51:37,343 - -----------------------
+2024-12-02 15:51:37,359 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:37,366 - Accuracy score for training set: 0.6263150022436057
+2024-12-02 15:51:37,371 - Accuracy score for cross validation set: 0.6272210589291056
+2024-12-02 15:51:37,372 - -----------------------
+2024-12-02 15:51:37,387 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:37,393 - Accuracy score for training set: 0.6264147180535474
+2024-12-02 15:51:37,399 - Accuracy score for cross validation set: 0.6268620999102602
+2024-12-02 15:51:37,399 - -----------------------
+2024-12-02 15:51:37,400 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:37,401 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,402 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:37,402 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,403 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:37,404 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,416 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:37,423 - Accuracy score for training set: 0.6994066909308471
+2024-12-02 15:51:37,431 - Accuracy score for cross validation set: 0.7006880047861203
+2024-12-02 15:51:37,432 - -----------------------
+2024-12-02 15:51:37,445 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:37,453 - Accuracy score for training set: 0.7049409183826095
+2024-12-02 15:51:37,459 - Accuracy score for cross validation set: 0.7053544720311098
+2024-12-02 15:51:37,459 - -----------------------
+2024-12-02 15:51:37,477 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:37,484 - Accuracy score for training set: 0.6263150022436057
+2024-12-02 15:51:37,490 - Accuracy score for cross validation set: 0.6272210589291056
+2024-12-02 15:51:37,491 - -----------------------
+2024-12-02 15:51:37,492 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:37,492 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,493 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:37,493 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,494 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:37,494 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,511 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:37,518 - Accuracy score for training set: 0.6864934935434013
+2024-12-02 15:51:37,524 - Accuracy score for cross validation set: 0.6824409213281484
+2024-12-02 15:51:37,524 - -----------------------
+2024-12-02 15:51:37,540 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:37,547 - Accuracy score for training set: 0.6263150022436057
+2024-12-02 15:51:37,553 - Accuracy score for cross validation set: 0.6272210589291056
+2024-12-02 15:51:37,553 - -----------------------
+2024-12-02 15:51:37,571 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:37,577 - Accuracy score for training set: 0.6263150022436057
+2024-12-02 15:51:37,585 - Accuracy score for cross validation set: 0.6272210589291056
+2024-12-02 15:51:37,586 - -----------------------
+2024-12-02 15:51:37,587 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:37,588 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,589 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:37,589 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,590 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:37,591 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,606 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:37,612 - Accuracy score for training set: 0.6263150022436057
+2024-12-02 15:51:37,620 - Accuracy score for cross validation set: 0.6272210589291056
+2024-12-02 15:51:37,620 - -----------------------
+2024-12-02 15:51:37,636 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:37,642 - Accuracy score for training set: 0.7047913446676971
+2024-12-02 15:51:37,648 - Accuracy score for cross validation set: 0.705234819024828
+2024-12-02 15:51:37,648 - -----------------------
+2024-12-02 15:51:37,663 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 3, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:37,670 - Accuracy score for training set: 0.6263150022436057
+2024-12-02 15:51:37,676 - Accuracy score for cross validation set: 0.6272210589291056
+2024-12-02 15:51:37,677 - -----------------------
+2024-12-02 15:51:37,678 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:37,678 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,679 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:37,680 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,681 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:37,682 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,704 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:37,710 - Accuracy score for training set: 0.7150122151867179
+2024-12-02 15:51:37,718 - Accuracy score for cross validation set: 0.7152258450493568
+2024-12-02 15:51:37,718 - -----------------------
+2024-12-02 15:51:37,736 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:37,745 - Accuracy score for training set: 0.6768210599790597
+2024-12-02 15:51:37,751 - Accuracy score for cross validation set: 0.6771761890517499
+2024-12-02 15:51:37,752 - -----------------------
+2024-12-02 15:51:37,772 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:37,779 - Accuracy score for training set: 0.712270030413322
+2024-12-02 15:51:37,787 - Accuracy score for cross validation set: 0.7128327849237213
+2024-12-02 15:51:37,788 - -----------------------
+2024-12-02 15:51:37,790 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:37,790 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,791 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:37,792 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,793 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:37,793 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,812 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:37,820 - Accuracy score for training set: 0.6359874358079474
+2024-12-02 15:51:37,827 - Accuracy score for cross validation set: 0.638049655997607
+2024-12-02 15:51:37,828 - -----------------------
+2024-12-02 15:51:37,847 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:37,854 - Accuracy score for training set: 0.7027471705638929
+2024-12-02 15:51:37,862 - Accuracy score for cross validation set: 0.7015854023332336
+2024-12-02 15:51:37,863 - -----------------------
+2024-12-02 15:51:37,882 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:37,889 - Accuracy score for training set: 0.6507952335842848
+2024-12-02 15:51:37,896 - Accuracy score for cross validation set: 0.6563565659587197
+2024-12-02 15:51:37,897 - -----------------------
+2024-12-02 15:51:37,898 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:37,898 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,899 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:37,900 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,901 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:37,901 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:37,922 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:37,932 - Accuracy score for training set: 0.7256319489455053
+2024-12-02 15:51:37,939 - Accuracy score for cross validation set: 0.7245587795393359
+2024-12-02 15:51:37,940 - -----------------------
+2024-12-02 15:51:37,959 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:37,965 - Accuracy score for training set: 0.7196490003490054
+2024-12-02 15:51:37,973 - Accuracy score for cross validation set: 0.7177385581812743
+2024-12-02 15:51:37,974 - -----------------------
+2024-12-02 15:51:37,991 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 2, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:37,997 - Accuracy score for training set: 0.7033454654235429
+2024-12-02 15:51:38,005 - Accuracy score for cross validation set: 0.7017648818426563
+2024-12-02 15:51:38,005 - -----------------------
+2024-12-02 15:51:38,006 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:38,007 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:38,009 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:38,009 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:38,011 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:38,011 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:38,031 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:38,038 - Accuracy score for training set: 0.6994066909308471
+2024-12-02 15:51:38,045 - Accuracy score for cross validation set: 0.702422973377206
+2024-12-02 15:51:38,045 - -----------------------
+2024-12-02 15:51:38,063 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:38,071 - Accuracy score for training set: 0.722441043027372
+2024-12-02 15:51:38,077 - Accuracy score for cross validation set: 0.7194137002692192
+2024-12-02 15:51:38,078 - -----------------------
+2024-12-02 15:51:38,095 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 1, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:38,102 - Accuracy score for training set: 0.633993119609114
+2024-12-02 15:51:38,110 - Accuracy score for cross validation set: 0.6334430152557583
+2024-12-02 15:51:38,110 - -----------------------
+2024-12-02 15:51:38,111 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:38,112 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:38,113 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:38,113 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:38,114 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:38,115 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:38,130 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:38,138 - Accuracy score for training set: 0.6282594605374682
+2024-12-02 15:51:38,144 - Accuracy score for cross validation set: 0.6320071791803769
+2024-12-02 15:51:38,145 - -----------------------
+2024-12-02 15:51:38,165 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:38,174 - Accuracy score for training set: 0.6969636535872763
+2024-12-02 15:51:38,180 - Accuracy score for cross validation set: 0.6929703858809453
+2024-12-02 15:51:38,180 - -----------------------
+2024-12-02 15:51:38,200 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:38,208 - Accuracy score for training set: 0.6294061923517974
+2024-12-02 15:51:38,215 - Accuracy score for cross validation set: 0.6283577624887825
+2024-12-02 15:51:38,215 - -----------------------
+2024-12-02 15:51:38,217 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 50}:
+2024-12-02 15:51:38,217 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:38,218 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 100}:
+2024-12-02 15:51:38,219 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:38,219 - Failed to fit model decision_tree with parameters {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'None', 'decision_tree__max_leaf_nodes': 500}:
+2024-12-02 15:51:38,220 - Error: The 'max_features' parameter of DecisionTreeClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'auto' (deprecated), 'sqrt', 'log2'} or None. Got 'None' instead.
+2024-12-02 15:51:38,236 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 50}
+2024-12-02 15:51:38,243 - Accuracy score for training set: 0.6798623921822805
+2024-12-02 15:51:38,251 - Accuracy score for cross validation set: 0.6771163625486091
+2024-12-02 15:51:38,252 - -----------------------
+2024-12-02 15:51:38,271 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 100}
+2024-12-02 15:51:38,278 - Accuracy score for training set: 0.7049409183826095
+2024-12-02 15:51:38,285 - Accuracy score for cross validation set: 0.7053544720311098
+2024-12-02 15:51:38,286 - -----------------------
+2024-12-02 15:51:38,305 - {'decision_tree__criterion': 'entropy', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 5, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:38,312 - Accuracy score for training set: 0.6565787505609014
+2024-12-02 15:51:38,319 - Accuracy score for cross validation set: 0.6600059826503141
+2024-12-02 15:51:38,319 - -----------------------
+2024-12-02 15:51:38,320 - ----------------------------------------------------------------
+2024-12-02 15:51:38,321 - Best Model: decision_tree
+2024-12-02 15:51:38,321 - Best Accuracy Score: 0.7248
+2024-12-02 15:51:38,322 - Best Parameters: {'decision_tree__criterion': 'gini', 'decision_tree__max_depth': 5, 'decision_tree__min_samples_split': 5, 'decision_tree__min_samples_leaf': 2, 'decision_tree__max_features': 'sqrt', 'decision_tree__max_leaf_nodes': 500}
+2024-12-02 15:51:38,322 - ----------------------------------------------------------------
+2024-12-02 15:51:38,323 - End of Initial Model Evaluation

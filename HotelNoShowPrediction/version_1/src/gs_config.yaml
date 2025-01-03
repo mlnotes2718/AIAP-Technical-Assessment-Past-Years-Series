@@ -1,0 +1,127 @@
+# gs_config.yaml
+
+
+
+#######################################################################################
+### User Guide:                                                                  ######
+#######################################################################################
+### There are 5 main configurations
+### They are SAMPLE_SIZE, MODEL_LIST, MODELS, PARAMS and GRID_SEARCH_PARAMS
+### SAMPLE_SIZE : If you dataset is very large, you can reduce the taining dataset.
+### MODEL_LIST : Use this setting to select which model to run, this way we can keep 
+### the settings of all other models.
+### MODELS : Use this setting to construct the pipeline for each model.
+### PARAMS : Use this setting to define which parameters to run for each model
+### GRID_SEARCH_PARAMS : This is the settings for grid search function
+###
+### This is grid search with cross validation fold. 
+### 
+#######################################################################################
+
+#############################################################################
+### Settings Parameters
+#############################################################################
+
+# Define Sample size for large dataset
+# If your dataset is very large, you can set the sample size
+# Use 1.0 for the whole dataset
+SAMPLE_SIZE : 0.8
+
+# Define which model to run
+# The MODELS_LIST will define which model to run so there is no need to delete any model configuration
+#MODELS_LIST : ['logistic_regression', 'decision_tree_classifier', 'knn_classifier', 'svc', 'rf_classifier', 'gb_classifier', 'xgboost_classifier']
+#MODELS_LIST : ['decision_tree_classifier','rf_classifier', 'gb_classifier', 'xgboost_classifier']
+MODELS_LIST : ['gb_classifier']
+
+
+# Define models pipelines that include polynomial features and scaling.
+# For feature scaling we have StandardScaler and MinMaxScaler
+MODELS : 
+  'logistic_regression':
+    - 'poly': PolynomialFeatures
+    - 'scaler': StandardScaler
+    - 'logistic': LogisticRegression 
+  'decision_tree_classifier':
+    - 'decision_tree_classifier': DecisionTreeClassifier
+  'knn_classifier':
+    - 'poly': PolynomialFeatures
+    - 'scaler': StandardScaler
+    - 'knn_classifier': KNeighborsClassifier        
+  'svc':
+    - 'poly': PolynomialFeatures
+    - 'scaler': StandardScaler
+    - 'svc': SVC       
+  'rf_classifier': 
+    - 'rf_classifier': RandomForestClassifier
+  'gb_classifier': 
+    - 'gb_classifier': GradientBoostingClassifier
+  'xgboost_classifier': 
+    - 'xgboost_classifier': XGBClassifier
+
+
+
+# Define hyperparameters for each model, including polynomial degree
+PARAMS : {
+    'logistic_regression': {
+        'poly__degree': [2], 
+        'logistic__C': [0.005, 0.008],
+        'logistic__penalty': ['l2'], 
+        'logistic__max_iter': [10000],
+        'logistic__solver': ['lbfgs', 'liblinear']           
+    },
+    'decision_tree_classifier': {
+        'decision_tree_classifier__criterion': ['gini'],
+        'decision_tree_classifier__max_depth': [5, 10, 50],
+        'decision_tree_classifier__min_samples_split': [2, 3, 5],
+        'decision_tree_classifier__min_samples_leaf': [1, 3, 4],
+        'decision_tree_classifier__max_features': [0.4, 0.5],
+        'decision_tree_classifier__max_leaf_nodes': [50, 100, 200]
+    },
+    'knn_classifier': {
+        'poly__degree': [2],
+        'knn_classifier__n_neighbors': [15, 20, 25],
+        'knn_classifier__weights': ['distance'],
+        'knn_classifier__metric': ['euclidean', 'manhattan', 'minkowski'],
+        'knn_classifier__p': [1, 2]
+    },
+    'svc': {
+        'poly__degree': [2],
+        'svc__C': [0.1, 1, 10, 100],
+        'svc__kernel': ['linear', 'rbf', 'poly'],
+        'svc__gamma': [0.001, 0.01, 0.1, 1],
+        'svc__class_weight': ['balanced'],
+    },
+    'rf_classifier':{
+        'rf_classifier__n_estimators': [500, 600],   
+        'rf_classifier__max_depth': [30, 35, 40],     
+        'rf_classifier__min_samples_split': [2, 3],          
+        'rf_classifier__min_samples_leaf': [1, 2],           
+        'rf_classifier__max_features': ['sqrt'],        
+        'rf_classifier__class_weight': ['balanced'],  
+    },
+    'gb_classifier':{
+        'gb_classifier__n_estimators': [800, 1000, 1200, 1500],      
+        'gb_classifier__learning_rate': [0.01],     
+        'gb_classifier__max_depth': [8, 10, 12],              
+        'gb_classifier__min_samples_split': [8, 1],     
+        'gb_classifier__min_samples_leaf': [1, 2],          
+        'gb_classifier__subsample': [1.0],               
+        'gb_classifier__max_features': ['sqrt'],                 
+    },
+    'xgboost_classifier': {
+        'xgboost_classifier__n_estimators': [150, 200, 250, 300],           
+        'xgboost_classifier__learning_rate': [0.005, 0.01, 0.05],        
+        'xgboost_classifier__max_depth': [15, 20, 25],                            
+        'xgboost_classifier__gamma': [0.1],                   
+        'xgboost_classifier__subsample': [0.8, 0.9, 1.0],                     
+    }
+}
+
+
+# Define grid search parameters with R² as the scoring metric
+GRID_SEARCH_PARAMS : {
+    'cv': 5,                        # Number of cross-validation folds
+    'scoring': 'accuracy',          # Use Accuracy as the scoring metric
+    'n_jobs': 4,                    # Do not use -1 as it will cause issue 
+    'verbose': 3
+}
